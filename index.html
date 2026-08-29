@@ -3,41 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Flying Journey</title>
-    <!-- Links to your CSS file for styling -->
+    <title>Lee Aviation | Flight Instruction</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic inline styles added for the new sections to ensure they render cleanly */
+        .syllabus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .lesson-card { border: 1px solid #ccc; padding: 15px; border-radius: 5px; }
+        .links-list { list-style-type: none; padding: 0; }
+        .links-list li { margin-bottom: 10px; }
+        img { max-width: 100%; height: auto; border-radius: 8px; }
+    </style>
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav>
-        <div class="logo">Skyward</div>
+        <div class="logo">Lee Aviation</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">My Journey</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#syllabus">Syllabus</a></li>
             <li><a href="#fleet">The Fleet</a></li>
+            <li><a href="#links">Local Links</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section (Top visual) -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Taking Flight</h1>
-            <p>Welcome to my aviation journey, from ground school to the clouds.</p>
-            <a href="#about" class="btn">Explore My Logbook</a>
+            <h1>Taking Flight with Lee Aviation</h1>
+            <p>From ground school to your checkride, master the skies with expert tailwheel and primary flight instruction.</p>
+            <a href="#syllabus" class="btn">Explore the Syllabus</a>
+            <br><br>
+            <!-- Hero Image -->
+            <img src="image_7.png" alt="Pilot leaning against aircraft on the ramp">
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <h2>Why I Fly</h2>
-        <p>There is nothing quite like the feeling of leaving the ground. On this site, I document my training, share photos from my cross-country flights, and connect with other aviation enthusiasts.</p>
+        <p>There is nothing quite like the feeling of leaving the ground and mastering stick-and-rudder skills. On this site, I document the training journey, share resources for upcoming lessons, and connect with other aviators around the Bryan, Madisonville, and Hooks communities.</p>
+        <!-- About Image -->
+        <img src="image_4.png" alt="Instructor and student in the cockpit">
+    </section>
+
+    <!-- Syllabus Section -->
+    <section id="syllabus" class="syllabus">
+        <h2>Private Pilot Syllabus & Study Materials</h2>
+        <p>Select a lesson below to download the associated study guides, LaTeX lesson plans, and Mermaid.js flowcharts.</p>
+        
+        <div class="syllabus-grid">
+            <!-- Stage 1 -->
+            <div class="lesson-card">
+                <h3>Stage One: Ground & Pre-Solo</h3>
+                <ul>
+                    <li><strong>Ground 1:</strong> <a href="#">Airplanes and Aerodynamics</a>[span_0](start_span)[span_0](end_span)</li>
+                    <li><strong>Flight 1:</strong> <a href="#">Introduction to Flight</a>[span_1](start_span)[span_1](end_span)</li>
+                    <li><strong>Flight 2:</strong> <a href="#">Four Fundamentals of Flight</a>[span_2](start_span)[span_2](end_span)</li>
+                    <li><strong>Ground 2:</strong> <a href="#">Airplane Instruments, Engines, and Systems</a>[span_3](start_span)[span_3](end_span)</li>
+                    <li><strong>Flight 4:</strong> <a href="#">Slow Flight and Stalls</a>[span_4](start_span)[span_4](end_span)</li>
+                </ul>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="lesson-card">
+                <h3>Stage Two: Cross-Country & Checkride Prep</h3>
+                <ul>
+                    <li><strong>Ground 7:</strong> <a href="#">Aviation Weather</a>[span_5](start_span)[span_5](end_span)</li>
+                    <li><strong>Flight 14:</strong> <a href="#">Short-Field and Soft-Field Takeoffs and Landings</a>[span_6](start_span)[span_6](end_span)</li>
+                    <li><strong>Flight 17:</strong> <a href="#">Dual Cross-Country</a>[span_7](start_span)[span_7](end_span)</li>
+                    <li><strong>Flight 25:</strong> <a href="#">Stage Two Check</a>[span_8](start_span)[span_8](end_span)</li>
+                    <li><strong>Flight 26:</strong> <a href="#">End of Course Test</a>[span_9](start_span)[span_9](end_span)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <h2>The Fleet</h2>
+        <p>Train in an American Champion Citabria, the perfect platform for mastering energy management and tailwheel proficiency.</p>
+        <!-- Fleet Images -->
+        <div style="display: flex; gap: 10px;">
+            <img src="image_2.png" alt="Cockpit instrument panel view over the clouds" style="width: 50%;">
+            <img src="image_5.png" alt="Close up of aircraft instrument panel" style="width: 50%;">
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section id="links" class="links">
+        <h2>Local Aviation Resources</h2>
+        <ul class="links-list">
+            <li><a href="#" target="_blank">Local Flight School (Hooks Airport)</a> - <em>Primary training and aircraft rental.</em></li>
+            <li><a href="#" target="_blank">Texas Aviators Flying Club</a> - <em>Community fly-ins and aircraft shares.</em></li>
+            <li><a href="ppsyl.php.pdf" target="_blank">Gleim Private Pilot Syllabus (PDF)</a> - <em>Full course requirements.</em></li>
+        </ul>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 My Flying Journey. See you in the skies.</p>
+        <p>&copy; 2026 Lee Aviation. See you in the skies.</p>
     </footer>
 
 </body>
