@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lee Aviation | Flight Instruction</title>
     
-    <!-- ALL CSS STYLING IS NOW INLINED HERE -->
+    <!-- ALL CSS STYLING IS INLINED HERE -->
     <style>
         /* General Reset */
         * {
@@ -87,27 +87,74 @@
             background-color: #2980b9;
         }
 
-        /* Syllabus Grid */
-        .syllabus-grid { 
-            display: grid; 
-            grid-template-columns: 1fr 1fr; 
-            gap: 30px; 
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
 
-        .lesson-card { 
+        .service-card {
             background: white;
-            border: 1px solid #e0e0e0; 
-            padding: 25px; 
-            border-radius: 8px; 
+            border: 1px solid #e0e0e0;
+            border-top: 4px solid #3498db;
+            padding: 25px;
+            border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
-        .lesson-card ul {
+        .service-card ul {
             list-style-type: none;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
         }
 
-        .lesson-card li {
-            margin-bottom: 10px;
+        .service-card li {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        /* Gleim-Style Syllabus Table */
+        .table-container {
+            overflow-x: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0e0;
+        }
+
+        .gleim-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95em;
+        }
+
+        .gleim-table th {
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 15px;
+            border-bottom: 2px solid #1a252f;
+        }
+
+        .gleim-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .gleim-table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .stage-row td {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-top: 2px solid #bdc3c7;
+            border-bottom: 2px solid #bdc3c7;
         }
 
         /* Fleet Images */
@@ -139,9 +186,9 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#syllabus">Syllabus</a></li>
             <li><a href="#fleet">The Fleet</a></li>
-            <li><a href="#links">Local Links</a></li>
         </ul>
     </nav>
 
@@ -150,9 +197,8 @@
         <div class="hero-content">
             <h1>Taking Flight with Lee Aviation</h1>
             <p>From ground school to your checkride, master the skies with expert tailwheel and primary flight instruction.</p>
-            <a href="#syllabus" class="btn">Explore the Syllabus</a>
+            <a href="#services" class="btn">View Training Services</a>
             <br><br>
-            <!-- Hero Image: Ramp Photo -->
             <img src="IMG_7109.jpeg" alt="Pilot leaning against Citabria on the ramp">
         </div>
     </section>
@@ -161,39 +207,118 @@
     <section id="about" class="about">
         <h2>Why I Fly</h2>
         <p>There is nothing quite like the feeling of leaving the ground and mastering stick-and-rudder skills. On this site, I document the training journey, share resources for upcoming lessons, and connect with other aviators around the Bryan, Madisonville, and Hooks communities.</p>
-        <!-- About Image: Cockpit Selfie -->
         <img src="IMG_3892.jpeg" alt="Instructor and student in the cockpit">
     </section>
 
-    <!-- Syllabus Section -->
-    <section id="syllabus" class="syllabus">
-        <h2>Private Pilot Syllabus & Study Materials</h2>
-        <p>Select a lesson below to download the associated study guides, lesson plans, and flowcharts.</p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Flight Training Services</h2>
+        <p>Whether you are starting from zero hours or adding a new endorsement to your logbook, training is tailored to your pace.</p>
         
-        <div class="syllabus-grid">
-            <!-- Stage 1 -->
-            <div class="lesson-card">
-                <h3>Stage One: Ground & Pre-Solo</h3>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Private Pilot Certificate</h3>
+                <p>Comprehensive primary instruction to earn your wings and safely navigate the skies.</p>
                 <ul>
-                    <li><strong>Ground 1:</strong> <a href="#">Airplanes and Aerodynamics</a></li>
-                    <li><strong>Flight 1:</strong> <a href="#">Introduction to Flight</a></li>
-                    <li><strong>Flight 2:</strong> <a href="#">Four Fundamentals of Flight</a></li>
-                    <li><strong>Ground 2:</strong> <a href="#">Airplane Instruments, Engines, and Systems</a></li>
-                    <li><strong>Flight 4:</strong> <a href="#">Slow Flight and Stalls</a></li>
+                    <li><strong>FAA Minimum:</strong> 40 flight hours</li>
+                    <li><strong>National Average:</strong> ~70 flight hours</li>
                 </ul>
             </div>
 
-            <!-- Stage 2 -->
-            <div class="lesson-card">
-                <h3>Stage Two: Cross-Country & Checkride Prep</h3>
+            <div class="service-card">
+                <h3>Tailwheel Endorsement</h3>
+                <p>Master conventional gear aircraft, energy management, and advanced stick-and-rudder techniques.</p>
                 <ul>
-                    <li><strong>Ground 7:</strong> <a href="#">Aviation Weather</a></li>
-                    <li><strong>Flight 14:</strong> <a href="#">Short-Field and Soft-Field Takeoffs and Landings</a></li>
-                    <li><strong>Flight 17:</strong> <a href="#">Dual Cross-Country</a></li>
-                    <li><strong>Flight 25:</strong> <a href="#">Stage Two Check</a></li>
-                    <li><strong>Flight 26:</strong> <a href="#">End of Course Test</a></li>
+                    <li><strong>FAA Minimum:</strong> Proficiency-based</li>
+                    <li><strong>Average Time:</strong> 5–10 flight hours</li>
                 </ul>
             </div>
+
+            <div class="service-card">
+                <h3>Flight Review (BFR)</h3>
+                <p>Fulfill your 24-calendar-month requirement, shake off the rust, and review critical regulations.</p>
+                <ul>
+                    <li><strong>FAA Minimum:</strong> 1 hr ground / 1 hr flight</li>
+                    <li><strong>Average Time:</strong> 1.5 hrs ground / 1.5 hrs flight</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Syllabus Section (Gleim Format) -->
+    <section id="syllabus" class="syllabus">
+        <h2>Private Pilot Syllabus</h2>
+        <p>Our training follows the structured <strong>Gleim Private Pilot Syllabus</strong>, ensuring a safe, building-block progression of learning from your first flight to your checkride.</p>
+        
+        <div class="table-container">
+            <table class="gleim-table">
+                <thead>
+                    <tr>
+                        <th>Lesson</th>
+                        <th>Topic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="stage-row">
+                        <td colspan="2">STAGE ONE: Pre-Solo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ground 1</strong></td>
+                        <td>Airplanes and Aerodynamics</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flight 1</strong></td>
+                        <td>Introduction to Flight</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flight 2</strong></td>
+                        <td>Four Fundamentals of Flight</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ground 2</strong></td>
+                        <td>Airplane Instruments, Engines, and Systems</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flight 4</strong></td>
+                        <td>Slow Flight and Stalls</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flight 11</strong></td>
+                        <td>First Solo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flight 12</strong></td>
+                        <td>Stage One Check</td>
+                    </tr>
+                    <tr class="stage-row">
+                        <td colspan="2">STAGE TWO: Cross-Country & Preparation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ground 7</strong></td>
+                        <td>Aviation Weather</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flight 14</strong></td>
+                        <td>Short-Field and Soft-Field Takeoffs and Landings</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flight 17</strong></td>
+                        <td>Dual Cross-Country</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ground 11</strong></td>
+                        <td>Cross-Country Flight Planning</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flight 25</strong></td>
+                        <td>Stage Two Check</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flight 26</strong></td>
+                        <td>End of Course Test</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
@@ -201,7 +326,6 @@
     <section id="fleet" class="fleet">
         <h2>The Fleet</h2>
         <p>Train in an American Champion Citabria, the perfect platform for mastering energy management and tailwheel proficiency.</p>
-        <!-- Fleet Images: Instrument Panels -->
         <div class="fleet-images">
             <img src="IMG_0050.jpeg" alt="Cockpit instrument panel view over the clouds">
             <img src="IMG_6598.jpeg" alt="Close up of aircraft instrument panel">
@@ -212,9 +336,9 @@
     <section id="links" class="links">
         <h2>Local Aviation Resources</h2>
         <ul class="links-list">
-            <li><a href="#" target="_blank">Local Flight School (Hooks Airport)</a> - <em>Primary training and aircraft rental.</em></li>
-            <li><a href="#" target="_blank">Texas Aviators Flying Club</a> - <em>Community fly-ins and aircraft shares.</em></li>
-            <li><a href="ppsyl.php.pdf" target="_blank">Gleim Private Pilot Syllabus (PDF)</a> - <em>Full course requirements.</em></li>
+            <li>Local Flight School (Hooks Airport) - <em>Primary training and aircraft rental.</em></li>
+            <li>Texas Aviators Flying Club - <em>Community fly-ins and aircraft shares.</em></li>
+            <li>Gleim Private Pilot Syllabus (PDF) - <em>Full course requirements.</em></li>
         </ul>
     </section>
 
