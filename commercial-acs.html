@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commercial Pilot ACS Comprehensive Reference | Lee Aviation</title>
+    <title>Master Training Hub | Lee Aviation</title>
     
     <style>
         * {
@@ -17,6 +17,7 @@
             line-height: 1.6;
             color: #333;
             background-color: #f9f9f9;
+            scroll-behavior: smooth;
         }
 
         nav {
@@ -26,6 +27,9 @@
             padding: 20px 50px;
             background-color: #2c3e50;
             color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .nav-links {
@@ -45,92 +49,95 @@
         }
 
         section {
-            padding: 60px 50px;
+            padding: 50px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        h2 {
-            margin-bottom: 20px;
+        h2, h3 {
             color: #2c3e50;
+            margin-bottom: 15px;
         }
 
-        p {
-            margin-bottom: 20px;
-        }
-
-        .table-container {
-            overflow-x: auto;
+        /* Quick Jump Table of Contents Box */
+        .toc-box {
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             border: 1px solid #e0e0e0;
+            border-left: 5px solid #3498db;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
-        .gleim-table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            font-size: 0.9em;
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
         }
 
-        .gleim-table th {
-            background-color: #2c3e50;
-            color: white;
-            padding: 12px 15px;
-            border-bottom: 2px solid #1a252f;
-        }
-
-        .gleim-table td {
-            padding: 15px;
-            border-bottom: 1px solid #eee;
-            vertical-align: top;
-        }
-
-        .gleim-table tr:hover {
-            background-color: #f5f5f5;
-        }
-
-        .stage-row td {
-            background-color: #ecf0f1;
+        .toc-grid a {
+            color: #3498db;
+            text-decoration: none;
             font-weight: bold;
-            color: #2c3e50;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-top: 2px solid #bdc3c7;
-            border-bottom: 2px solid #bdc3c7;
+        }
+
+        .toc-grid a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Cards */
+        .content-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .content-card h3 {
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .acs-list {
             list-style-type: disc;
             padding-left: 20px;
-            margin-top: 5px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .acs-list li {
-            margin-bottom: 4px;
+            margin-bottom: 6px;
         }
 
         .element-heading {
             font-weight: bold;
             color: #2c3e50;
-            margin-top: 8px;
+            margin-top: 12px;
         }
 
         .element-heading:first-child {
             margin-top: 0;
         }
 
-        .lesson-link-space a {
+        .references {
+            margin-top: 15px;
+            padding-top: 12px;
+            border-top: 1px solid #eee;
+            font-size: 0.95em;
+        }
+
+        .references a {
             color: #3498db;
             text-decoration: none;
             font-weight: bold;
-            display: block;
-            margin-bottom: 6px;
+            margin-right: 15px;
         }
 
-        .lesson-link-space a:hover {
+        .references a:hover {
             text-decoration: underline;
         }
 
@@ -150,449 +157,157 @@
         <div class="logo">Lee Aviation</div>
         <ul class="nav-links">
             <li><a href="index.html#home">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
             <li><a href="index.html#services">Services</a></li>
             <li><a href="index.html#syllabus">Syllabus</a></li>
-            <li><a href="index.html#links">Resources</a></li>
-            <li><a href="commercial-acs.html">Commercial ACS</a></li>
+            <li><a href="#">Master Hub</a></li>
         </ul>
     </nav>
 
-    <!-- ACS Reference Section -->
-    <section id="acs-mapping" class="syllabus">
-        <h2>Commercial Pilot ACS Task-by-Task Master Reference</h2>
-        <p>Detailed breakdown of individual Tasks, covering specific Knowledge, Risk Management, and Skill elements from FAA-S-ACS-7B[cite: 1].</p>
-        
-        <div class="table-container">
-            <table class="gleim-table">
-                <thead>
-                    <tr>
-                        <th>Area of Operation & Task</th>
-                        <th>Detailed Knowledge, Risk Management, & Skill Breakdown</th>
-                        <th>FAA Reference Links</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- AREA I -->
-                    <tr class="stage-row"><td colspan="3">Area of Operation I: Preflight Preparation</td></tr>
-                    <tr>
-                        <td><strong>Task A</strong><br>Pilot Qualifications</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Certification requirements, recent flight experience, and logbook recordkeeping[cite: 1]</li>
-                                <li>Commercial privileges and limitations; medical certificate classes and expiration[cite: 1]</li>
-                                <li>Part 68 BasicMed privileges and limitations[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Proficiency versus currency[cite: 1]</li>
-                                <li>Flying unfamiliar aircraft or operating with unfamiliar avionics/flight displays[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Apply requirements to act as PIC under VFR in a scenario given by evaluator[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.ecfr.gov/current/title-14/part-61" target="_blank">14 CFR Part 61</a>
-                            <a href="https://www.ecfr.gov/current/title-14/part-91" target="_blank">14 CFR Part 91</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Task B</strong><br>Airworthiness Requirements</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Required aircraft certificates, inspections, and logbook documentation[cite: 1]</li>
-                                <li>Airworthiness Directives (ADs), SAIBs, and special flight permits[cite: 1]</li>
-                                <li>Pilot-performed preventive maintenance (14 CFR Part 43)[cite: 1]</li>
-                                <li>Equipment requirements for day/night VFR (§ 91.205), MELs, and KOELs[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Mitigating risks associated with inoperative equipment discovered prior to flight[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Locate registration/airworthiness data and determine aircraft airworthiness[cite: 1]</li>
-                                <li>Apply proper procedures for operating with inoperative equipment[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.ecfr.gov/current/title-14/part-91/section-91.205" target="_blank">14 CFR § 91.205</a>
-                            <a href="https://www.ecfr.gov/current/title-14/part-43" target="_blank">14 CFR Part 43</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Task C</strong><br>Weather Information</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Weather data sources (NWS, Flight Service) and preflight products (METAR, TAF, GFA, FB)[cite: 1]</li>
-                                <li>Atmospheric stability, windshear, mountain waves, fronts, icing, and thunderstorms[cite: 1]</li>
-                                <li>Digital weather and aeronautical flight deck displays[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Go/no-go and continue/divert decision making under hazardous weather conditions[cite: 1]</li>
-                                <li>Limitations of onboard weather equipment and forecast products[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Obtain adequate weather briefings and analyze implications of weather hazards[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/14_phak_ch12.pdf" target="_blank">PHAK Ch 12 (Weather)</a>
-                            <a href="https://www.faa.gov/sites/faa.gov/files/15_phak_ch13.pdf" target="_blank">PHAK Ch 13 (Services)</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Task D</strong><br>Cross-Country Flight Planning</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Route planning, airspace consideration, and navigation system selection[cite: 1]</li>
-                                <li>Altitude selection, time, distance, heading, true airspeed, and fuel reserve calculations[cite: 1]</li>
-                                <li>VFR flight plan filing, activation, closing, and inflight intercept procedures[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>P-A-T-E-N (Pilot, Aircraft, Environment, External Pressures, Network) risk assessment[cite: 1]</li>
-                                <li>EFB navigation limitations and fuel planning contingencies[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Prepare and present cross-country flight plans with real-time risk analysis[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf" target="_blank">PHAK Ch 16 (Navigation)</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Task E - I</strong><br>NAS, Performance, Systems, Human Factors, Water Ops</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>National Airspace System (NAS) classes, SUA, TFRs, and SFRA requirements[cite: 1]</li>
-                                <li>Performance charts, density altitude, and weight and balance computations[cite: 1]</li>
-                                <li>Aircraft primary/secondary systems, powerplant, electrical, and avionics operation[cite: 1]</li>
-                                <li>Aeromedical factors: hypoxia, spatial disorientation, fatigue, and hazardous attitudes[cite: 1]</li>
-                                <li>Seaplane hull construction, porpoising/skipping causes, and maritime rules[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management & Skills:</div>
-                            <ul class="acs-list">
-                                <li>Mitigate airspace violations, system failures, and confirmation bias[cite: 1]</li>
-                                <li>Compute weight/balance, operate aircraft systems, and apply SRM/CRM[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf" target="_blank">PHAK Ch 11 (Performance)</a>
-                            <a href="https://www.faa.gov/sites/faa.gov/files/17_phak_ch15.pdf" target="_blank">PHAK Ch 15 (Airspace)</a>
-                            <a href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" target="_blank">PHAK Ch 17 (Aeromedical)</a>
-                        </td>
-                    </tr>
+    <section>
+        <h2>Lee Aviation Master Training Hub</h2>
+        <p>A unified, single-page reference guide covering overlapping Private and Commercial ACS standards. Use the quick-jump links below to navigate straight to a topic.</p>
 
-                    <!-- AREA II -->
-                    <tr class="stage-row"><td colspan="3">Area of Operation II: Preflight Procedures</td></tr>
-                    <tr>
-                        <td><strong>Tasks A - F</strong><br>Preflight Assessment to Before Takeoff Check</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Pilot self-assessment and systematic exterior/interior preflight inspection[cite: 1]</li>
-                                <li>Passenger briefing requirements (seatbelts, doors, sterile flight deck, emergency egress)[cite: 1]</li>
-                                <li>Engine starting under various conditions and operational limitations[cite: 1]</li>
-                                <li>Taxi and sailing operations, airport diagrams, hot spots, and runway incursion avoidance[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Propeller safety, passenger distractions, and expectation bias on taxi clearances[cite: 1]</li>
-                                <li>Division of attention during run-up checks and wake turbulence avoidance[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Execute preflight inspection, passenger briefing, and checklist procedures[cite: 1]</li>
-                                <li>Maintain positive directional control and ground speed without excessive braking[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/04_afh_ch2.pdf" target="_blank">AFH Ch 2 (Ground Ops)</a>
-                        </td>
-                    </tr>
+        <!-- Quick Jump Table of Contents -->
+        <div class="toc-box">
+            <h3>Quick Jump Index</h3>
+            <div class="toc-grid">
+                <div><a href="#preflight">1. Preflight Prep & Airworthiness</a></div>
+                <div><a href="#weather">2. Weather & Aeromedical</a></div>
+                <div><a href="#operations">3. Airport & Ground Operations</a></div>
+                <div><a href="#maneuvers">4. Takeoffs, Landings & Maneuvers</a></div>
+                <div><a href="#navigation">5. Navigation & Airspace</a></div>
+                <div><a href="#emergencies">6. Stalls, Slow Flight & Emergencies</a></div>
+            </div>
+        </div>
 
-                    <!-- AREA III -->
-                    <tr class="stage-row"><td colspan="3">Area of Operation III: Airport and Seaplane Base Operations</td></tr>
-                    <tr>
-                        <td><strong>Tasks A - B</strong><br>Communications & Traffic Patterns</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <div>Radio communication procedures, ATC phraseology, light signals, and lost comms[cite: 1]</div>
-                                <div>Towered/nontowered airport operations, traffic pattern selection, and right-of-way rules[cite: 1]</div>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Collision hazards, traffic density, windshear, and wake turbulence[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Select frequencies, use standard phraseology, and comply with ATC[cite: 1]</li>
-                                <li>Maintain traffic pattern altitude ($\pm100$ ft) and airspeed ($\pm10$ kts)[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/09_afh_ch7.pdf" target="_blank">AFH Ch 7 (Airport Ops)</a>
-                        </td>
-                    </tr>
+        <!-- SECTION 1 -->
+        <div id="preflight" class="content-card">
+            <h3>1. Preflight Preparation & Airworthiness</h3>
+            <div class="element-heading">Knowledge Areas:</div>
+            <ul class="acs-list">
+                <li>Pilot privileges, limitations, currency requirements, and logbook recordkeeping[cite: 1].</li>
+                <li>Required aircraft certificates, inspections, ADs, and day/night VFR equipment rules (14 CFR § 91.205)[cite: 1].</li>
+                <li>Weight and balance calculations, performance charts, and density altitude effects[cite: 1].</li>
+            </ul>
+            <div class="element-heading">Risk Management & Skills:</div>
+            <ul class="acs-list">
+                <li>Evaluating currency vs. proficiency and managing unfamiliar avionics[cite: 1].</li>
+                <li>Verifying aircraft airworthiness and handling pre-flight inoperative equipment under § 91.213[cite: 1].</li>
+            </ul>
+            <div class="references">
+                <strong>FAA Links:</strong> 
+                <a href="https://www.ecfr.gov/current/title-14/part-61" target="_blank">14 CFR Part 61</a>
+                <a href="https://www.ecfr.gov/current/title-14/part-91/section-91.205" target="_blank">14 CFR § 91.205</a>
+                <a href="https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf" target="_blank">PHAK Ch 11 (Performance)</a>
+            </div>
+        </div>
 
-                    <!-- AREA IV -->
-                    <tr class="stage-row"><td colspan="3">Area of Operation IV: Takeoffs, Landings, and Go-Arounds</td></tr>
-                    <tr>
-                        <td><strong>Tasks A - F</strong><br>Normal, Soft-Field, Short-Field Takeoffs & Landings</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Stabilized approaches, energy management, and atmospheric effects on performance[cite: 1]</li>
-                                <li>Best angle/rate of climb speeds ($V_X / V_Y$) and crosswind correction techniques[cite: 1]</li>
-                                <li>Soft-field weight transfer dynamics and short-field obstacle clearance parameters[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Low-altitude maneuvering, stall/spin hazards, and crosswind drift on final[cite: 1]</li>
-                                <li>Delayed go-around decisions and runway length constraints[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Execute smooth takeoffs and stabilized approaches to targeted touchdown points[cite: 1]</li>
-                                <li>Maintain directional control and proper drift correction throughout[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/10_afh_ch8.pdf" target="_blank">AFH Ch 8 (Takeoffs)</a>
-                            <a href="https://www.faa.gov/sites/faa.gov/files/11_afh_ch9.pdf" target="_blank">AFH Ch 9 (Landings)</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tasks G - N</strong><br>Water Ops, Power-Off 180°, Go-Arounds</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Confined area and glassy/rough water takeoff and landing procedures[cite: 1]</li>
-                                <li>Purpose of power-off $180^\circ$ accuracy approach and energy management[cite: 1]</li>
-                                <li>Go-around/rejected landing procedures and the importance of timely decisions[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Hidden water hazards, vessel traffic, and forward slip fuel/flap limits[cite: 1]</li>
-                                <li>Low-altitude power application and startle response during rejected landings[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Perform precise power-off $180^\circ$ approach touching down within 200 feet[cite: 1]</li>
-                                <li>Execute immediate, safe go-arounds from low altitude maintaining $V_{X} / V_{Y}$[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/11_afh_ch9.pdf" target="_blank">AFH Ch 9 (Approaches & Landings)</a>
-                        </td>
-                    </tr>
+        <!-- SECTION 2 -->
+        <div id="weather" class="content-card">
+            <h3>2. Weather Information & Aeromedical Factors</h3>
+            <div class="element-heading">Knowledge Areas:</div>
+            <ul class="acs-list">
+                <li>Weather briefing sources, METARs, TAFs, GFA charts, and wind/temperature aloft forecasts[cite: 1].</li>
+                <li>Atmospheric stability, frontal systems, icing, thunderstorms, and windshear[cite: 1].</li>
+                <li>Aeromedical factors: hypoxia, spatial disorientation, fatigue, and hazardous attitudes[cite: 1].</li>
+            </ul>
+            <div class="element-heading">Risk Management & Skills:</div>
+            <ul class="acs-list">
+                <li>Making sound go/no-go and continue/divert decisions based on real-time weather[cite: 1].</li>
+                <li>Performing personal minimums self-assessments and recognizing physiological triggers[cite: 1].</li>
+            </ul>
+            <div class="references">
+                <strong>FAA Links:</strong> 
+                <a href="https://www.faa.gov/sites/faa.gov/files/14_phak_ch12.pdf" target="_blank">PHAK Ch 12 (Weather Theory)</a>
+                <a href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" target="_blank">PHAK Ch 17 (Aeromedical)</a>
+            </div>
+        </div>
 
-                    <!-- AREA V -->
-                    <tr class="stage-row"><td colspan="3">Area of Operation V: Performance & Ground Reference Maneuvers</td></tr>
-                    <tr>
-                        <td><strong>Tasks A - E</strong><br>Steep Turns, Steep Spirals, Chandelles, Lazy Eights, Eights on Pylons</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Aerodynamics of steep turns ($50^\circ$ bank), load factor, and accelerated stalls[cite: 1]</li>
-                                <li>Steep spiral constant radius procedures and emergency landing integration[cite: 1]</li>
-                                <li>Chandelles and lazy eights flight profiles and continuously decreasing airspeed[cite: 1]</li>
-                                <li>Pivotal altitude calculations and wind effects for eights on pylons[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Division of attention between aircraft control and external orientation[cite: 1]</li>
-                                <li>Uncoordinated flight, accelerated stalls, and low-altitude terrain hazards[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Maintain entry altitude ($\pm100$ ft), bank constraints, and exact headings[cite: 1]</li>
-                                <li>Execute precise commercial maneuvers demonstrating master energy management[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/12_afh_ch10.pdf" target="_blank">AFH Ch 10 (Commercial Maneuvers)</a>
-                        </td>
-                    </tr>
+        <!-- SECTION 3 -->
+        <div id="operations" class="content-card">
+            <h3>3. Airport & Ground Operations</h3>
+            <div class="element-heading">Knowledge Areas:</div>
+            <ul class="acs-list">
+                <li>Airport diagrams, hot spots, runway incursion avoidance, and taxi/sailing rules[cite: 1].</li>
+                <li>Radio communication procedures, ATC phraseology, light signals, and lost comms[cite: 1].</li>
+                <li>Passenger brief requirements (seatbelts, sterile flight deck, emergency exit operations)[cite: 1].</li>
+            </ul>
+            <div class="element-heading">Risk Management & Skills:</div>
+            <ul class="acs-list">
+                <li>Mitigating expectation bias on taxi clearances and managing ramp distractions[cite: 1].</li>
+                <li>Maintaining positive directional control during ground operations without excessive braking[cite: 1].</li>
+            </ul>
+            <div class="references">
+                <strong>FAA Links:</strong> 
+                <a href="https://www.faa.gov/sites/faa.gov/files/04_afh_ch2.pdf" target="_blank">AFH Ch 2 (Ground Ops)</a>
+                <a href="https://www.faa.gov/sites/faa.gov/files/09_afh_ch7.pdf" target="_blank">AFH Ch 7 (Airport Ops)</a>
+            </div>
+        </div>
 
-                    <!-- AREA VI -->
-                    <tr class="stage-row"><td colspan="3">Area of Operation VI: Navigation</td></tr>
-                    <tr>
-                        <td><strong>Tasks A - D</strong><br>Pilotage, Navigation Systems, Diversions, Lost Procedures</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Pilotage, dead reckoning, and magnetic compass errors[cite: 1]</li>
-                                <li>Ground-based (VOR) and satellite-based (GPS/RAIM) navigation systems[cite: 1]</li>
-                                <li>Procedures for diversion planning and lost aircraft resolution[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Automation reliance, signal loss, and spatial disorientation[cite: 1]</li>
-                                <li>Unplanned fuel burn and delayed activation of emergency assistance[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Track courses accurately and arrive at checkpoints within $\pm3$ minutes[cite: 1]</li>
-                                <li>Execute prompt diversions and utilize ATC or navigation aids when lost[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf" target="_blank">PHAK Ch 16 (Navigation)</a>
-                        </td>
-                    </tr>
+        <!-- SECTION 4 -->
+        <div id="maneuvers" class="content-card">
+            <h3>4. Takeoffs, Landings & Performance Maneuvers</h3>
+            <div class="element-heading">Knowledge Areas:</div>
+            <ul class="acs-list">
+                <li>Stabilized approach concepts, energy management, and crosswind correction techniques[cite: 1].</li>
+                <li>Soft-field weight transfer dynamics and short-field obstacle clearance parameters ($V_X / V_Y$)[cite: 1].</li>
+                <li>Aerodynamics of steep turns ($50^\circ$ bank), load factor, chandelles, and lazy eights[cite: 1].</li>
+            </ul>
+            <div class="element-heading">Risk Management & Skills:</div>
+            <ul class="acs-list">
+                <li>Managing low-altitude maneuvering risks, stall/spin awareness, and delayed go-arounds[cite: 1].</li>
+                <li>Executing targeted landings (within 100-200 ft) and precise commercial performance maneuvers[cite: 1].</li>
+            </ul>
+            <div class="references">
+                <strong>FAA Links:</strong> 
+                <a href="https://www.faa.gov/sites/faa.gov/files/11_afh_ch9.pdf" target="_blank">AFH Ch 9 (Landings)</a>
+                <a href="https://www.faa.gov/sites/faa.gov/files/12_afh_ch10.pdf" target="_blank">AFH Ch 10 (Commercial Maneuvers)</a>
+            </div>
+        </div>
 
-                    <!-- AREA VII -->
-                    <tr class="stage-row"><td colspan="3">Area of Operation VII: Slow Flight and Stalls</td></tr>
-                    <tr>
-                        <td><strong>Tasks A - E</strong><br>Slow Flight, Power-Off/On Stalls, Accelerated Stalls, Spin Awareness</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Relationship between angle of attack, airspeed, load factor, power, and yaw[cite: 1]</li>
-                                <li>Recognition of impending and full stall indications (sight, sound, feel)[cite: 1]</li>
-                                <li>Causes of spins, spin phases (entry, incipient, developed), and recovery[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Inadvertent stall/spin during low-altitude turning maneuvers[cite: 1]</li>
-                                <li>Secondary stalls, accelerated stalls, and cross-control slip hazards[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Maintain slow flight configuration without continuous stall warnings[cite: 1]</li>
-                                <li>Promptly recognize the first indication of a stall and execute clean recovery[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/07_afh_ch5.pdf" target="_blank">AFH Ch 5 (Slow Flight & Stalls)</a>
-                        </td>
-                    </tr>
+        <!-- SECTION 5 -->
+        <div id="navigation" class="content-card">
+            <h3>5. Navigation & Airspace</h3>
+            <div class="element-heading">Knowledge Areas:</div>
+            <ul class="acs-list">
+                <li>Pilotage, dead reckoning, flight log preparation, and magnetic compass errors[cite: 1].</li>
+                <li>Ground-based (VOR) and satellite-based (GPS/RAIM) navigation system utilization[cite: 1].</li>
+                <li>National Airspace System (NAS) classes, Special Use Airspace (SUA), and TFRs[cite: 1].</li>
+            </ul>
+            <div class="element-heading">Risk Management & Skills:</div>
+            <ul class="acs-list">
+                <li>Mitigating automation reliance, signal loss, and spatial disorientation[cite: 1].</li>
+                <li>Executing prompt cross-country diversions and navigating via pre-computed headings[cite: 1].</li>
+            </ul>
+            <div class="references">
+                <strong>FAA Links:</strong> 
+                <a href="https://www.faa.gov/sites/faa.gov/files/17_phak_ch15.pdf" target="_blank">PHAK Ch 15 (Airspace)</a>
+                <a href="https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf" target="_blank">PHAK Ch 16 (Navigation)</a>
+            </div>
+        </div>
 
-                    <!-- AREA VIII -->
-                    <tr class="stage-row"><td colspan="3">Area of Operation VIII: High-Altitude Operations</td></tr>
-                    <tr>
-                        <td><strong>Tasks A - B</strong><br>Supplemental Oxygen & Pressurization</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Regulatory requirements for supplemental oxygen use[cite: 1]</li>
-                                <li>Hypoxia symptoms, time of useful consciousness (TUC), and trapped gas issues[cite: 1]</li>
-                                <li>Pressurization system concepts and rapid decompression effects[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>High-altitude fatigue, compressed gas handling, and combustion hazards[cite: 1]</li>
-                                <li>Pressurization system failure management[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Calculate supplemental oxygen requirements for given scenarios[cite: 1]</li>
-                                <li>Simulate oxygen equipment operation and passenger emergency briefings[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" target="_blank">PHAK Ch 17 (Aeromedical)</a>
-                        </td>
-                    </tr>
-
-                    <!-- AREA IX -->
-                    <tr class="stage-row"><td colspan="3">Area of Operation IX: Emergency Operations</td></tr>
-                    <tr>
-                        <td><strong>Tasks A - G</strong><br>Emergency Descents, Landings, Malfunctions, Engine Failures</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Emergency descent triggers, best glide speed mechanics, and wind effects[cite: 1]</li>
-                                <li>Electrical, vacuum, instrument, and landing gear malfunction procedures[cite: 1]</li>
-                                <li>Multiengine engine-out aerodynamics ($V_{MC}$, $V_{YSE}$, zero sideslip)[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Startle response, checklist rushing, and low-altitude task saturation[cite: 1]</li>
-                                <li>Collision hazards and terrain selection during simulated forced landings[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Execute emergency descents and best glide profiles maintaining tolerances[cite: 1]</li>
-                                <li>Manage system failures and simulated engine-out procedures safely[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/20_afh_ch18.pdf" target="_blank">AFH Ch 18 (Emergencies)</a>
-                            <a href="https://www.faa.gov/sites/faa.gov/files/15_afh_ch13.pdf" target="_blank">AFH Ch 13 (Multiengine)</a>
-                        </td>
-                    </tr>
-
-                    <!-- AREA X -->
-                    <tr class="stage-row"><td colspan="3">Area of Operation X: Multiengine Operations</td></tr>
-                    <tr>
-                        <td><strong>Tasks A - D</strong><br>One Engine Inoperative Maneuvers & VMC Demo</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Factors affecting minimum controllable airspeed ($V_{MC}$)[cite: 1]</li>
-                                <li>Engine feathering, securing, restart protocols, and single-engine instrument flight[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Loss of directional control below $V_{MC}$ at high power settings[cite: 1]</li>
-                                <li>Inability to climb or maintain altitude on a single engine[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Demonstrate $V_{MC}$ recognition and prompt recovery without exceeding limits[cite: 1]</li>
-                                <li>Perform single-engine straight-and-level flight, turns, and instrument approaches[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/15_afh_ch13.pdf" target="_blank">AFH Ch 13 (Multiengine Ops)</a>
-                        </td>
-                    </tr>
-
-                    <!-- AREA XI -->
-                    <tr class="stage-row"><td colspan="3">Area of Operation XI: Postflight Procedures</td></tr>
-                    <tr>
-                        <td><strong>Tasks A - B</strong><br>After Landing, Parking, Securing, Seaplane Mooring</td>
-                        <td>
-                            <div class="element-heading">Knowledge:</div>
-                            <ul class="acs-list">
-                                <li>Engine shutdown, postflight inspection, and logging discrepancies[cite: 1]</li>
-                                <li>Seaplane mooring, docking, anchoring, and beaching/ramping techniques[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Risk Management:</div>
-                            <ul class="acs-list">
-                                <li>Ramp distractions and safe passenger movement around spinning propellers[cite: 1]</li>
-                                <li>Tidal changes and wind effects on moored/anchored aircraft[cite: 1]</li>
-                            </ul>
-                            <div class="element-heading">Skills:</div>
-                            <ul class="acs-list">
-                                <li>Park safely, conduct thorough postflight inspections, and secure aircraft[cite: 1]</li>
-                            </ul>
-                        </td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/04_afh_ch2.pdf" target="_blank">AFH Ch 2 (Ground Ops)</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- SECTION 6 -->
+        <div id="emergencies" class="content-card">
+            <h3>6. Slow Flight, Stalls & Emergency Operations</h3>
+            <div class="element-heading">Knowledge Areas:</div>
+            <ul class="acs-list">
+                <li>Relationship between angle of attack, airspeed, load factor, power settings, and yaw[cite: 1].</li>
+                <li>Recognition of impending/full stall cues and spin recovery procedures[cite: 1].</li>
+                <li>Emergency descent triggers, best glide mechanics, and system malfunction checklists[cite: 1].</li>
+            </ul>
+            <div class="element-heading">Risk Management & Skills:</div>
+            <ul class="acs-list">
+                <li>Managing startle response, low-altitude task saturation, and forced landing field selection[cite: 1].</li>
+                <li>Maintaining precise slow flight control and executing clean, immediate stall recoveries[cite: 1].</li>
+            </ul>
+            <div class="references">
+                <strong>FAA Links:</strong> 
+                <a href="https://www.faa.gov/sites/faa.gov/files/07_afh_ch5.pdf" target="_blank">AFH Ch 5 (Slow Flight & Stalls)</a>
+                <a href="https://www.faa.gov/sites/faa.gov/files/20_afh_ch18.pdf" target="_blank">AFH Ch 18 (Emergency Procedures)</a>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Lee Aviation. See you in the skies.</p>
     </footer>
