@@ -1,316 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Training Hub | Lee Aviation</title>
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-            scroll-behavior: smooth;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: #2c3e50;
-            color: white;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .nav-links a:hover {
-            color: #3498db;
-        }
-
-        section {
-            padding: 50px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        h2, h3 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-
-        /* Quick Jump Table of Contents Box */
-        .toc-box {
-            background: white;
-            border: 1px solid #e0e0e0;
-            border-left: 5px solid #3498db;
-            padding: 25px;
-            border-radius: 8px;
-            margin-bottom: 40px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .toc-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .toc-grid a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .toc-grid a:hover {
-            text-decoration: underline;
-        }
-
-        /* Content Cards */
-        .content-card {
-            background: white;
-            border: 1px solid #e0e0e0;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .content-card h3 {
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        .acs-list {
-            list-style-type: disc;
-            padding-left: 20px;
-            margin-bottom: 15px;
-        }
-
-        .acs-list li {
-            margin-bottom: 6px;
-        }
-
-        .element-heading {
-            font-weight: bold;
-            color: #2c3e50;
-            margin-top: 12px;
-        }
-
-        .element-heading:first-child {
-            margin-top: 0;
-        }
-
-        .references {
-            margin-top: 15px;
-            padding-top: 12px;
-            border-top: 1px solid #eee;
-            font-size: 0.95em;
-        }
-
-        .references a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-            margin-right: 15px;
-        }
-
-        .references a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background-color: #2c3e50;
-            color: white;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">Lee Aviation</div>
-        <ul class="nav-links">
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="index.html#services">Services</a></li>
-            <li><a href="index.html#syllabus">Syllabus</a></li>
-            <li><a href="#">Master Hub</a></li>
-        </ul>
-    </nav>
-
-    <section>
-        <h2>Lee Aviation Master Training Hub</h2>
-        <p>A unified, single-page reference guide covering overlapping Private and Commercial ACS standards. Use the quick-jump links below to navigate straight to a topic.</p>
-
-        <!-- Quick Jump Table of Contents -->
-        <div class="toc-box">
-            <h3>Quick Jump Index</h3>
-            <div class="toc-grid">
-                <div><a href="#preflight">1. Preflight Prep & Airworthiness</a></div>
-                <div><a href="#weather">2. Weather & Aeromedical</a></div>
-                <div><a href="#operations">3. Airport & Ground Operations</a></div>
-                <div><a href="#maneuvers">4. Takeoffs, Landings & Maneuvers</a></div>
-                <div><a href="#navigation">5. Navigation & Airspace</a></div>
-                <div><a href="#emergencies">6. Stalls, Slow Flight & Emergencies</a></div>
-            </div>
-        </div>
-
-        <!-- SECTION 1 -->
-        <div id="preflight" class="content-card">
-            <h3>1. Preflight Preparation & Airworthiness</h3>
-            <div class="element-heading">Knowledge Areas:</div>
+<!-- AREA OF OPERATION I: PREFLIGHT PREPARATION -->
+        <div class="content-card">
+            <h3>Area of Operation I: Preflight Preparation</h3>
+            
+            <!-- Task A -->
+            <div class="element-heading">Task A: Pilot Qualifications</div>
             <ul class="acs-list">
-                <li>Pilot privileges, limitations, currency requirements, and logbook recordkeeping[cite: 1].</li>
-                <li>Required aircraft certificates, inspections, ADs, and day/night VFR equipment rules (14 CFR § 91.205)[cite: 1].</li>
-                <li>Weight and balance calculations, performance charts, and density altitude effects[cite: 1].</li>
-            </ul>
-            <div class="element-heading">Risk Management & Skills:</div>
-            <ul class="acs-list">
-                <li>Evaluating currency vs. proficiency and managing unfamiliar avionics[cite: 1].</li>
-                <li>Verifying aircraft airworthiness and handling pre-flight inoperative equipment under § 91.213[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Certification requirements, recent flight experience, and logbook recordkeeping[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Commercial privileges, limitations, and medical certificate classes, expirations, and temporary disqualifications[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Documents required to exercise commercial pilot privileges and Part 68 BasicMed privileges/limitations[cite: 1].</li>
+                <li><strong>Risk Management:</strong> Proficiency versus currency[cite: 1].</li>
+                <li><strong>Risk Management:</strong> Flying unfamiliar aircraft or operating with unfamiliar flight display systems and avionics[cite: 1].</li>
+                <li><strong>Skills:</strong> Apply requirements to act as pilot-in-command (PIC) under VFR in a scenario given by the evaluator[cite: 1].</li>
             </ul>
             <div class="references">
-                <strong>FAA Links:</strong> 
-                <a href="https://www.ecfr.gov/current/title-14/part-61" target="_blank">14 CFR Part 61</a>
-                <a href="https://www.ecfr.gov/current/title-14/part-91/section-91.205" target="_blank">14 CFR § 91.205</a>
-                <a href="https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf" target="_blank">PHAK Ch 11 (Performance)</a>
+                <strong>References:</strong> 
+                <a href="https://www.ecfr.gov/current/title-14/part-61" target="_blank">14 CFR Part 61</a>, 
+                <a href="https://www.ecfr.gov/current/title-14/part-91" target="_blank">14 CFR Part 91</a>
             </div>
-        </div>
 
-        <!-- SECTION 2 -->
-        <div id="weather" class="content-card">
-            <h3>2. Weather Information & Aeromedical Factors</h3>
-            <div class="element-heading">Knowledge Areas:</div>
+            <!-- Task B -->
+            <div class="element-heading" style="margin-top: 20px;">Task B: Airworthiness Requirements</div>
             <ul class="acs-list">
-                <li>Weather briefing sources, METARs, TAFs, GFA charts, and wind/temperature aloft forecasts[cite: 1].</li>
-                <li>Atmospheric stability, frontal systems, icing, thunderstorms, and windshear[cite: 1].</li>
-                <li>Aeromedical factors: hypoxia, spatial disorientation, fatigue, and hazardous attitudes[cite: 1].</li>
-            </ul>
-            <div class="element-heading">Risk Management & Skills:</div>
-            <ul class="acs-list">
-                <li>Making sound go/no-go and continue/divert decisions based on real-time weather[cite: 1].</li>
-                <li>Performing personal minimums self-assessments and recognizing physiological triggers[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Location and expiration dates of required aircraft certificates and required inspections/logbook documentation[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Airworthiness Directives (ADs), Special Airworthiness Information Bulletins (SAIBs), and special flight permits[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Pilot-performed preventive maintenance under 14 CFR Part 43[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Equipment requirements for day and night VFR flight (§ 91.205), including MELs, KOELs, and required placards[cite: 1].</li>
+                <li><strong>Risk Management:</strong> Mitigating risks associated with inoperative equipment discovered prior to flight[cite: 1].</li>
+                <li><strong>Skills:</strong> Locate and describe airplane airworthiness and registration info, and determine airworthiness in a given scenario[cite: 1].</li>
             </ul>
             <div class="references">
-                <strong>FAA Links:</strong> 
-                <a href="https://www.faa.gov/sites/faa.gov/files/14_phak_ch12.pdf" target="_blank">PHAK Ch 12 (Weather Theory)</a>
-                <a href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" target="_blank">PHAK Ch 17 (Aeromedical)</a>
+                <strong>References:</strong> 
+                <a href="https://www.ecfr.gov/current/title-14/part-91/section-91.205" target="_blank">14 CFR § 91.205</a>, 
+                <a href="https://www.ecfr.gov/current/title-14/part-43" target="_blank">14 CFR Part 43</a>
             </div>
-        </div>
 
-        <!-- SECTION 3 -->
-        <div id="operations" class="content-card">
-            <h3>3. Airport & Ground Operations</h3>
-            <div class="element-heading">Knowledge Areas:</div>
+            <!-- Task C -->
+            <div class="element-heading" style="margin-top: 20px;">Task C: Weather Information</div>
             <ul class="acs-list">
-                <li>Airport diagrams, hot spots, runway incursion avoidance, and taxi/sailing rules[cite: 1].</li>
-                <li>Radio communication procedures, ATC phraseology, light signals, and lost comms[cite: 1].</li>
-                <li>Passenger brief requirements (seatbelts, sterile flight deck, emergency exit operations)[cite: 1].</li>
-            </ul>
-            <div class="element-heading">Risk Management & Skills:</div>
-            <ul class="acs-list">
-                <li>Mitigating expectation bias on taxi clearances and managing ramp distractions[cite: 1].</li>
-                <li>Maintaining positive directional control during ground operations without excessive braking[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Weather data sources (NWS, Flight Service) and preflight products (METAR/SPECI, PIREPs, Surface Analysis, TAFs, GFA, FBs, AIRMETs, SIGMETs)[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Meteorology applicable to VFR flight: atmospheric stability, windshear, mountain waves, fronts, icing, and thunderstorms[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Flight deck instrument displays of digital weather and aeronautical information[cite: 1].</li>
+                <li><strong>Risk Management:</strong> Go/no-go and continue/divert decisions, personal weather minimums, and forecast turbulence/icing aloft[cite: 1].</li>
+                <li><strong>Skills:</strong> Use available weather resources to obtain briefings, analyze weather conditions, and correlate info for go/no-go decisions[cite: 1].</li>
             </ul>
             <div class="references">
-                <strong>FAA Links:</strong> 
-                <a href="https://www.faa.gov/sites/faa.gov/files/04_afh_ch2.pdf" target="_blank">AFH Ch 2 (Ground Ops)</a>
-                <a href="https://www.faa.gov/sites/faa.gov/files/09_afh_ch7.pdf" target="_blank">AFH Ch 7 (Airport Ops)</a>
+                <strong>References:</strong> 
+                <a href="https://www.faa.gov/sites/faa.gov/files/14_phak_ch12.pdf" target="_blank">PHAK Ch 12 (Weather)</a>, 
+                <a href="https://www.faa.gov/sites/faa.gov/files/15_phak_ch13.pdf" target="_blank">PHAK Ch 13 (Services)</a>
             </div>
-        </div>
 
-        <!-- SECTION 4 -->
-        <div id="maneuvers" class="content-card">
-            <h3>4. Takeoffs, Landings & Performance Maneuvers</h3>
-            <div class="element-heading">Knowledge Areas:</div>
+            <!-- Task D -->
+            <div class="element-heading" style="margin-top: 20px;">Task D: Cross-Country Flight Planning</div>
             <ul class="acs-list">
-                <li>Stabilized approach concepts, energy management, and crosswind correction techniques[cite: 1].</li>
-                <li>Soft-field weight transfer dynamics and short-field obstacle clearance parameters ($V_X / V_Y$)[cite: 1].</li>
-                <li>Aerodynamics of steep turns ($50^\circ$ bank), load factor, chandelles, and lazy eights[cite: 1].</li>
-            </ul>
-            <div class="element-heading">Risk Management & Skills:</div>
-            <ul class="acs-list">
-                <li>Managing low-altitude maneuvering risks, stall/spin awareness, and delayed go-arounds[cite: 1].</li>
-                <li>Executing targeted landings (within 100-200 ft) and precise commercial performance maneuvers[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Route planning, airspace/SUA considerations, and navigation/communication system selection (including EFB use)[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Altitude selection accounting for terrain, obstacles, glide distance, and wind[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Calculations for time, fuel requirements/reserves, true airspeed, groundspeed, and ETA/UTC[cite: 1].</li>
+                <li><strong>Knowledge:</strong> VFR flight plan elements, filing/activating/closing procedures, and inflight intercept protocols[cite: 1].</li>
+                <li><strong>Risk Management:</strong> Pilot, aircraft, environment, external pressures, ATC limitations, and EFB constraints[cite: 1].</li>
+                <li><strong>Skills:</strong> Prepare and present a cross-country flight plan with risk analysis, navigation log, and fuel reserve calculations[cite: 1].</li>
             </ul>
             <div class="references">
-                <strong>FAA Links:</strong> 
-                <a href="https://www.faa.gov/sites/faa.gov/files/11_afh_ch9.pdf" target="_blank">AFH Ch 9 (Landings)</a>
-                <a href="https://www.faa.gov/sites/faa.gov/files/12_afh_ch10.pdf" target="_blank">AFH Ch 10 (Commercial Maneuvers)</a>
-            </div>
-        </div>
-
-        <!-- SECTION 5 -->
-        <div id="navigation" class="content-card">
-            <h3>5. Navigation & Airspace</h3>
-            <div class="element-heading">Knowledge Areas:</div>
-            <ul class="acs-list">
-                <li>Pilotage, dead reckoning, flight log preparation, and magnetic compass errors[cite: 1].</li>
-                <li>Ground-based (VOR) and satellite-based (GPS/RAIM) navigation system utilization[cite: 1].</li>
-                <li>National Airspace System (NAS) classes, Special Use Airspace (SUA), and TFRs[cite: 1].</li>
-            </ul>
-            <div class="element-heading">Risk Management & Skills:</div>
-            <ul class="acs-list">
-                <li>Mitigating automation reliance, signal loss, and spatial disorientation[cite: 1].</li>
-                <li>Executing prompt cross-country diversions and navigating via pre-computed headings[cite: 1].</li>
-            </ul>
-            <div class="references">
-                <strong>FAA Links:</strong> 
-                <a href="https://www.faa.gov/sites/faa.gov/files/17_phak_ch15.pdf" target="_blank">PHAK Ch 15 (Airspace)</a>
+                <strong>References:</strong> 
                 <a href="https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf" target="_blank">PHAK Ch 16 (Navigation)</a>
             </div>
-        </div>
 
-        <!-- SECTION 6 -->
-        <div id="emergencies" class="content-card">
-            <h3>6. Slow Flight, Stalls & Emergency Operations</h3>
-            <div class="element-heading">Knowledge Areas:</div>
+            <!-- Task E -->
+            <div class="element-heading" style="margin-top: 20px;">Task E: National Airspace System</div>
             <ul class="acs-list">
-                <li>Relationship between angle of attack, airspeed, load factor, power settings, and yaw[cite: 1].</li>
-                <li>Recognition of impending/full stall cues and spin recovery procedures[cite: 1].</li>
-                <li>Emergency descent triggers, best glide mechanics, and system malfunction checklists[cite: 1].</li>
-            </ul>
-            <div class="element-heading">Risk Management & Skills:</div>
-            <ul class="acs-list">
-                <li>Managing startle response, low-altitude task saturation, and forced landing field selection[cite: 1].</li>
-                <li>Maintaining precise slow flight control and executing clean, immediate stall recoveries[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Airspace classes, associated requirements, limitations, and chart symbols[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Special Use Airspace (SUA), Special Flight Rules Areas (SFRA), TFRs, and Special VFR requirements[cite: 1].</li>
+                <li><strong>Risk Management:</strong> Identifying and mitigating risks associated with various airspace classes and special rules[cite: 1].</li>
+                <li><strong>Skills:</strong> Comply with VFR weather minimums, communication requirements, and special air traffic rules (SATR)[cite: 1].</li>
             </ul>
             <div class="references">
-                <strong>FAA Links:</strong> 
-                <a href="https://www.faa.gov/sites/faa.gov/files/07_afh_ch5.pdf" target="_blank">AFH Ch 5 (Slow Flight & Stalls)</a>
-                <a href="https://www.faa.gov/sites/faa.gov/files/20_afh_ch18.pdf" target="_blank">AFH Ch 18 (Emergency Procedures)</a>
+                <strong>References:</strong> 
+                <a href="https://www.faa.gov/sites/faa.gov/files/17_phak_ch15.pdf" target="_blank">PHAK Ch 15 (Airspace)</a>
             </div>
+
+            <!-- Task F -->
+            <div class="element-heading" style="margin-top: 20px;">Task F: Performance and Limitations</div>
+            <ul class="acs-list">
+                <li><strong>Knowledge:</strong> Use of performance charts, tables, and data affected by atmosphere, pilot technique, configuration, and airport environment[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Weight and balance principles, aircraft loading, and underlying flight aerodynamics[cite: 1].</li>
+                <li><strong>Risk Management:</strong> Use of performance data, aircraft limitations, and differences between calculated vs. actual performance[cite: 1].</li>
+                <li><strong>Skills:</strong> Compute weight and balance, correct out-of-CG errors, and use appropriate performance charts[cite: 1].</li>
+            </ul>
+            <div class="references">
+                <strong>References:</strong> 
+                <a href="https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf" target="_blank">PHAK Ch 11 (Performance)</a>
+            </div>
+
+            <!-- Task G -->
+            <div class="element-heading" style="margin-top: 20px;">Task G: Operation of Systems</div>
+            <ul class="acs-list">
+                <li><strong>Knowledge:</strong> Flight controls, powerplant/propellers, landing gear, fuel/hydraulic/electrical systems, avionics, pitot-static, and environmental systems[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Indications of and procedures for managing system abnormalities or failures[cite: 1].</li>
+                <li><strong>Risk Management:</strong> Detection, management, and monitoring of system malfunctions and automated systems[cite: 1].</li>
+                <li><strong>Skills:</strong> Operate at least three specified aircraft systems appropriately and complete checklists[cite: 1].</li>
+            </ul>
+            <div class="references">
+                <strong>References:</strong> 
+                <a href="https://www.faa.gov/sites/faa.gov/files/08_phak_ch6.pdf" target="_blank">PHAK Ch 6 (Aircraft Systems)</a>
+            </div>
+
+            <!-- Task H -->
+            <div class="element-heading" style="margin-top: 20px;">Task H: Human Factors</div>
+            <ul class="acs-list">
+                <li><strong>Knowledge:</strong> Aeromedical issues: hypoxia, hyperventilation, ear/sinus blocks, spatial disorientation, motion sickness, and carbon monoxide[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Fatigue, stress, dehydration, nutritional factors, and alcohol/drug regulations[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Aeronautical Decision-Making (ADM), Crew Resource Management (CRM), and Single-Pilot Resource Management (SRM)[cite: 1].</li>
+                <li><strong>Risk Management:</strong> Physiological issues, hazardous attitudes, distractions, task prioritization, and confirmation/expectation bias[cite: 1].</li>
+                <li><strong>Skills:</strong> Associate symptoms/effects for medical conditions with corrective actions, and perform self-assessment/personal minimums[cite: 1].</li>
+            </ul>
+            <div class="references">
+                <strong>References:</strong> 
+                <a href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" target="_blank">PHAK Ch 17 (Aeromedical Factors)</a>
+            </div>
+
+            <!-- Task I -->
+            <div class="element-heading" style="margin-top: 20px;">Task I: Water and Seaplane Characteristics (ASES/AMES)</div>
+            <ul class="acs-list">
+                <li><strong>Knowledge:</strong> Water surface characteristics (size, wind, current, debris, waves) and float/hull construction performance effects[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Causes of porpoising and skipping, and pilot actions needed to prevent/correct them[cite: 1].</li>
+                <li><strong>Knowledge:</strong> Seaplane base restrictions, right-of-way/maritime rules, and marine navigation aids[cite: 1].</li>
+                <li><strong>Risk Management:</strong> Local conditions, marine traffic impact, right-of-way rules, and limited base services[cite: 1].</li>
+                <li><strong>Skills:</strong> Assess water characteristics, identify base restrictions/nav aids, and explain float performance effects[cite: 1].</li>
+            </ul>
+            <div class="references">
+                <strong>References:</strong> 
+                <a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/seaplane_handbook" target="_blank">Airplane Flying Handbook (Seaplane Ops)</a>
+            </div>
+
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Lee Aviation. See you in the skies.</p>
-    </footer>
-
-</body>
-</html>
