@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commercial Pilot ACS Reference | Lee Aviation</title>
+    <title>Commercial Pilot ACS Master Reference | Lee Aviation</title>
     
     <style>
         /* General Reset */
@@ -62,7 +62,7 @@
             margin-bottom: 20px;
         }
 
-        /* Gleim-Style Syllabus Table */
+        /* Table Styling */
         .table-container {
             overflow-x: auto;
             background: white;
@@ -75,7 +75,7 @@
             width: 100%;
             border-collapse: collapse;
             text-align: left;
-            font-size: 0.95em;
+            font-size: 0.9em;
         }
 
         .gleim-table th {
@@ -88,6 +88,7 @@
         .gleim-table td {
             padding: 12px 15px;
             border-bottom: 1px solid #eee;
+            vertical-align: top;
         }
 
         .gleim-table tr:hover {
@@ -108,6 +109,8 @@
             color: #3498db;
             text-decoration: none;
             font-weight: bold;
+            display: block;
+            margin-bottom: 4px;
         }
 
         .lesson-link-space a:hover {
@@ -141,112 +144,146 @@
 
     <!-- ACS Reference Section -->
     <section id="acs-mapping" class="syllabus">
-        <h2>Commercial Pilot ACS to FAA Library Index</h2>
-        <p>Use this index to map all specific Tasks in the Commercial Pilot Airman Certification Standards (ACS) directly to the official FAA source material for focused ground study.</p>
+        <h2>Commercial Pilot ACS Master Knowledge, Risk & Skill Index</h2>
+        <p>Comprehensive mapping of all Areas of Operation, encompassing required Knowledge (K), Risk Management (R), and Skill (S) elements[cite: 1].</p>
         
         <div class="table-container">
             <table class="gleim-table">
                 <thead>
                     <tr>
-                        <th>ACS Area of Operation</th>
-                        <th>Tasks & Knowledge Areas</th>
+                        <th>Area of Operation</th>
+                        <th>Tasks & Core Elements (K / R / S)</th>
                         <th>FAA Reference Links</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="stage-row">
-                        <td colspan="3">Preflight Preparation & Procedures</td>
-                    </tr>
+                    <!-- AREA I -->
+                    <tr class="stage-row"><td colspan="3">Area of Operation I: Preflight Preparation</td></tr>
                     <tr>
-                        <td><strong>I. Preflight Preparation</strong></td>
-                        <td>Tasks A & B: Pilot Qualifications & Airworthiness</td>
+                        <td><strong>Task A-C</strong></td>
+                        <td><strong>Knowledge:</strong> Privileges, limitations, currency, airworthiness, weather products/theory.<br><strong>Risk:</strong> Currency vs. proficiency, go/no-go decisions, weather minimums.<br><strong>Skills:</strong> PIC VFR application, airworthiness verification, weather briefing analysis.</td>
                         <td class="lesson-link-space">
-                            <a href="https://www.ecfr.gov/current/title-14/part-61" target="_blank">14 CFR Part 61</a><br>
+                            <a href="https://www.ecfr.gov/current/title-14/part-61" target="_blank">14 CFR Part 61</a>
                             <a href="https://www.ecfr.gov/current/title-14/part-91" target="_blank">14 CFR Part 91</a>
+                            <a href="https://www.faa.gov/sites/faa.gov/files/14_phak_ch12.pdf" target="_blank">PHAK Ch 12 (Weather)</a>
                         </td>
                     </tr>
                     <tr>
-                        <td><strong>I. Preflight Preparation</strong></td>
-                        <td>Tasks C, D, E: Weather, Cross-Country Planning, NAS Airspace</td>
+                        <td><strong>Task D-I</strong></td>
+                        <td><strong>Knowledge:</strong> Cross-country planning, NAS airspace, performance data, aircraft systems, human factors.<br><strong>Risk:</strong> External pressures, airspace violations, performance discrepancies, fatigue/hypoxia.<br><strong>Skills:</strong> Flight plan generation, weight & balance computation, system operation.</td>
                         <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/14_phak_ch12.pdf" target="_blank">PHAK Ch 12 & 13 (Weather)</a><br>
-                            <a href="https://www.faa.gov/sites/faa.gov/files/17_phak_ch15.pdf" target="_blank">PHAK Ch 15 (Airspace)</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>I. Preflight Preparation</strong></td>
-                        <td>Tasks F, G, H: Performance/Limitations, Systems, Human Factors</td>
-                        <td class="lesson-link-space">
-                            <a href="https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf" target="_blank">PHAK Ch 11 (Performance)</a><br>
+                            <a href="https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf" target="_blank">PHAK Ch 11 (Performance)</a>
                             <a href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" target="_blank">PHAK Ch 17 (Aeromedical)</a>
                         </td>
                     </tr>
+
+                    <!-- AREA II -->
+                    <tr class="stage-row"><td colspan="3">Area of Operation II: Preflight Procedures</td></tr>
                     <tr>
-                        <td><strong>II. Preflight Procedures</strong></td>
-                        <td>Tasks A-F: Assessment, Flight Deck Mgmt, Engine Start, Taxiing, Before Takeoff</td>
-                        <td class="lesson-link-space"><a href="https://www.faa.gov/sites/faa.gov/files/04_afh_ch2.pdf" target="_blank">AFH Ch 2 (Ground Ops)</a></td>
+                        <td><strong>Task A-F</strong></td>
+                        <td><strong>Knowledge:</strong> Pilot self-assessment, preflight inspections, passenger briefings, engine starting, taxi/sailing rules, before-takeoff checks.<br><strong>Risk:</strong> Runway incursions, propeller safety, checklist distraction, expectation bias.<br><strong>Skills:</strong> Thorough aircraft inspection, flight deck management, positive aircraft ground control.</td>
+                        <td class="lesson-link-space">
+                            <a href="https://www.faa.gov/sites/faa.gov/files/04_afh_ch2.pdf" target="_blank">AFH Ch 2 (Ground Ops)</a>
+                        </td>
                     </tr>
 
-                    <tr class="stage-row">
-                        <td colspan="3">Airport Operations, Takeoffs & Landings</td>
-                    </tr>
+                    <!-- AREA III -->
+                    <tr class="stage-row"><td colspan="3">Area of Operation III: Airport and Seaplane Base Operations</td></tr>
                     <tr>
-                        <td><strong>III. Airport Operations</strong></td>
-                        <td>Tasks A-B: Communications, Light Signals, Traffic Patterns</td>
-                        <td class="lesson-link-space"><a href="https://www.faa.gov/sites/faa.gov/files/09_afh_ch7.pdf" target="_blank">AFH Ch 7 (Airport Ops)</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>IV. Takeoffs, Landings, and Go-Arounds</strong></td>
-                        <td>Tasks A, C, E, G, I, K: Normal, Soft/Short, Confined, Glassy/Rough Water Takeoffs</td>
-                        <td class="lesson-link-space"><a href="https://www.faa.gov/sites/faa.gov/files/10_afh_ch8.pdf" target="_blank">AFH Ch 8 (Takeoffs)</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>IV. Takeoffs, Landings, and Go-Arounds</strong></td>
-                        <td>Tasks B, D, F, H, J, L, M, N: Normal, Soft/Short Field, Water, Power-Off 180°, Go-Arounds</td>
-                        <td class="lesson-link-space"><a href="https://www.faa.gov/sites/faa.gov/files/11_afh_ch9.pdf" target="_blank">AFH Ch 9 (Approaches & Landings)</a></td>
+                        <td><strong>Task A-B</strong></td>
+                        <td><strong>Knowledge:</strong> Radio communications, ATC light signals, runway lighting, traffic pattern operations, right-of-way rules.<br><strong>Risk:</strong> Collision hazards, windshear, wake turbulence, communication loss.<br><strong>Skills:</strong> Standard phraseology, traffic pattern adherence ($\pm100$ ft, $\pm10$ kts).</td>
+                        <td class="lesson-link-space">
+                            <a href="https://www.faa.gov/sites/faa.gov/files/09_afh_ch7.pdf" target="_blank">AFH Ch 7 (Airport Ops)</a>
+                        </td>
                     </tr>
 
-                    <tr class="stage-row">
-                        <td colspan="3">Maneuvers & Navigation</td>
+                    <!-- AREA IV -->
+                    <tr class="stage-row"><td colspan="3">Area of Operation IV: Takeoffs, Landings, and Go-Arounds</td></tr>
+                    <tr>
+                        <td><strong>Task A-F</strong></td>
+                        <td><strong>Knowledge:</strong> Stabilized approaches, energy management, crosswind components, best angle/rate of speeds ($V_X / V_Y$), soft/short field dynamics.<br><strong>Risk:</strong> Low-altitude stalls, crosswind drift, runway length limits, delayed go-arounds.<br><strong>Skills:</strong> Precise takeoff control, targeted touchdown execution (within 100-200 ft).</td>
+                        <td class="lesson-link-space">
+                            <a href="https://www.faa.gov/sites/faa.gov/files/10_afh_ch8.pdf" target="_blank">AFH Ch 8 (Takeoffs)</a>
+                            <a href="https://www.faa.gov/sites/faa.gov/files/11_afh_ch9.pdf" target="_blank">AFH Ch 9 (Landings)</a>
+                        </td>
                     </tr>
                     <tr>
-                        <td><strong>V. Performance & Ground Ref Maneuvers</strong></td>
-                        <td>Tasks A-E: Steep Turns, Steep Spiral, Chandelles, Lazy Eights, Eights on Pylons</td>
-                        <td class="lesson-link-space"><a href="https://www.faa.gov/sites/faa.gov/files/12_afh_ch10.pdf" target="_blank">AFH Ch 10 (Commercial Maneuvers)</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>VI. Navigation</strong></td>
-                        <td>Tasks A-D: Pilotage/Dead Reckoning, Navigation Systems, Diversion, Lost Procedures</td>
-                        <td class="lesson-link-space"><a href="https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf" target="_blank">PHAK Ch 16 (Navigation)</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>VII. Slow Flight and Stalls</strong></td>
-                        <td>Tasks A-E: Slow Flight, Power-On/Off Stalls, Accelerated Stalls, Spin Awareness</td>
-                        <td class="lesson-link-space"><a href="https://www.faa.gov/sites/faa.gov/files/07_afh_ch5.pdf" target="_blank">AFH Ch 5 (Slow Flight & Stalls)</a></td>
+                        <td><strong>Task G-N</strong></td>
+                        <td><strong>Knowledge:</strong> Water/confined area operations, glassy/rough water techniques, power-off $180^\circ$ accuracy approach objectives.<br><strong>Risk:</strong> Porpoising/skipping, unseen water hazards, slip mechanics, tail stalls with flaps.<br><strong>Skills:</strong> Accurate power-off gliding approach to a designated landing spot.</td>
+                        <td class="lesson-link-space">
+                            <a href="https://www.faa.gov/sites/faa.gov/files/11_afh_ch9.pdf" target="_blank">AFH Ch 9 (Approaches & Landings)</a>
+                        </td>
                     </tr>
 
-                    <tr class="stage-row">
-                        <td colspan="3">Advanced, Emergency, & Postflight Operations</td>
-                    </tr>
+                    <!-- AREA V -->
+                    <tr class="stage-row"><td colspan="3">Area of Operation V: Performance Maneuvers and Ground Reference Maneuvers</td></tr>
                     <tr>
-                        <td><strong>VIII. High-Altitude Operations</strong></td>
-                        <td>Tasks A-B: Supplemental Oxygen, Pressurization</td>
-                        <td class="lesson-link-space"><a href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" target="_blank">PHAK Ch 17 (Aeromedical Factors)</a></td>
+                        <td><strong>Task A-E</strong></td>
+                        <td><strong>Knowledge:</strong> Steep turn aerodynamics, overbanking tendencies, load factor, pivotal altitude for eights on pylons, chandelles, lazy eights.<br><strong>Risk:</strong> Uncoordinated flight, altitude loss, accelerated stalls, division of attention.<br><strong>Skills:</strong> Smooth execution maintaining bank ($\pm5^\circ$) and altitude ($\pm100$ ft).</td>
+                        <td class="lesson-link-space">
+                            <a href="https://www.faa.gov/sites/faa.gov/files/12_afh_ch10.pdf" target="_blank">AFH Ch 10 (Commercial Maneuvers)</a>
+                        </td>
                     </tr>
+
+                    <!-- AREA VI -->
+                    <tr class="stage-row"><td colspan="3">Area of Operation VI: Navigation</td></tr>
                     <tr>
-                        <td><strong>IX. Emergency Operations</strong></td>
-                        <td>Tasks A-G: Emergency Descents, Approach/Landing, System Malfunctions, Equipment/Survival Gear</td>
-                        <td class="lesson-link-space"><a href="https://www.faa.gov/sites/faa.gov/files/20_afh_ch18.pdf" target="_blank">AFH Ch 18 (Emergency Procedures)</a></td>
+                        <td><strong>Task A-D</strong></td>
+                        <td><strong>Knowledge:</strong> Pilotage, dead reckoning, compass errors, ground/satellite navigation systems, diversion planning, lost procedures.<br><strong>Risk:</strong> Spatial disorientation, fuel exhaustion, loss of signal, ATC radar limitations.<br><strong>Skills:</strong> Course tracking, checkpoint timing ($\pm3$ mins), prompt diversion.</td>
+                        <td class="lesson-link-space">
+                            <a href="https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf" target="_blank">PHAK Ch 16 (Navigation)</a>
+                        </td>
                     </tr>
+
+                    <!-- AREA VII -->
+                    <tr class="stage-row"><td colspan="3">Area of Operation VII: Slow Flight and Stalls</td></tr>
                     <tr>
-                        <td><strong>X. Multiengine Operations</strong></td>
-                        <td>Tasks A-D: Maneuvering with One Engine Inop, VMC Demo, Engine Failure on Instruments</td>
-                        <td class="lesson-link-space"><a href="https://www.faa.gov/sites/faa.gov/files/15_afh_ch13.pdf" target="_blank">AFH Ch 13 (Multiengine Airplanes)</a></td>
+                        <td><strong>Task A-E</strong></td>
+                        <td><strong>Knowledge:</strong> Flight at minimum controllable airspeed, power-on/off stalls, accelerated stall dynamics, spin awareness and recovery.<br><strong>Risk:</strong> Inadvertent stall/spin, secondary stalls, cross-control slips close to the ground.<br><strong>Skills:</strong> Prompt recognition of first indication of stall and immediate clean recovery.</td>
+                        <td class="lesson-link-space">
+                            <a href="https://www.faa.gov/sites/faa.gov/files/07_afh_ch5.pdf" target="_blank">AFH Ch 5 (Slow Flight & Stalls)</a>
+                        </td>
                     </tr>
+
+                    <!-- AREA VIII -->
+                    <tr class="stage-row"><td colspan="3">Area of Operation VIII: High-Altitude Operations</td></tr>
                     <tr>
-                        <td><strong>XI. Postflight Procedures</strong></td>
-                        <td>Tasks A-B: After Landing, Parking, Securing, Seaplane Mooring</td>
-                        <td class="lesson-link-space"><a href="https://www.faa.gov/sites/faa.gov/files/04_afh_ch2.pdf" target="_blank">AFH Ch 2 (Ground Ops)</a></td>
+                        <td><strong>Task A-B</strong></td>
+                        <td><strong>Knowledge:</strong> Regulatory supplemental oxygen requirements, hypoxia symptoms, time of useful consciousness (TUC), pressurization systems.<br><strong>Risk:</strong> High-altitude fatigue, rapid decompression hazards, oxygen cylinder fire risks.<br><strong>Skills:</strong> Oxygen quantity calculation, passenger briefing simulation.</td>
+                        <td class="lesson-link-space">
+                            <a href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" target="_blank">PHAK Ch 17 (Aeromedical Factors)</a>
+                        </td>
+                    </tr>
+
+                    <!-- AREA IX -->
+                    <tr class="stage-row"><td colspan="3">Area of Operation IX: Emergency Operations</td></tr>
+                    <tr>
+                        <td><strong>Task A-G</strong></td>
+                        <td><strong>Knowledge:</strong> Emergency descent triggers, best glide speeds vs. minimum sink, system/instrument malfunctions, multiengine engine-out procedures ($V_{MC}$, $V_{YSE}$).<br><strong>Risk:</strong> Startle response, checklist rushing, low-altitude engine failure management.<br><strong>Skills:</strong> Positive aircraft control, checklist execution, simulated engine-out handling.</td>
+                        <td class="lesson-link-space">
+                            <a href="https://www.faa.gov/sites/faa.gov/files/20_afh_ch18.pdf" target="_blank">AFH Ch 18 (Emergency Procedures)</a>
+                            <a href="https://www.faa.gov/sites/faa.gov/files/15_afh_ch13.pdf" target="_blank">AFH Ch 13 (Multiengine Ops)</a>
+                        </td>
+                    </tr>
+
+                    <!-- AREA X -->
+                    <tr class="stage-row"><td colspan="3">Area of Operation X: Multiengine Operations</td></tr>
+                    <tr>
+                        <td><strong>Task A-D</strong></td>
+                        <td><strong>Knowledge:</strong> Factors affecting $V_{MC}$, zero sideslip concept, single-engine instrument flight and approaches.<br><strong>Risk:</strong> Loss of directional control below $V_{MC}$, inability to maintain altitude on one engine.<br><strong>Skills:</strong> Single-engine control tracking ($\pm100$ ft, $\pm10$ kts), $V_{MC}$ demonstration recovery.</td>
+                        <td class="lesson-link-space">
+                            <a href="https://www.faa.gov/sites/faa.gov/files/15_afh_ch13.pdf" target="_blank">AFH Ch 13 (Multiengine Operations)</a>
+                        </td>
+                    </tr>
+
+                    <!-- AREA XI -->
+                    <tr class="stage-row"><td colspan="3">Area of Operation XI: Postflight Procedures</td></tr>
+                    <tr>
+                        <td><strong>Task A-B</strong></td>
+                        <td><strong>Knowledge:</strong> Aircraft shutdown protocols, documenting maintenance discrepancies, seaplane mooring/anchoring.<br><strong>Risk:</strong> Ramp distractions, safe passenger disembarkation around active props.<br><strong>Skills:</strong> Proper parking, postflight inspection, securing the aircraft.</td>
+                        <td class="lesson-link-space">
+                            <a href="https://www.faa.gov/sites/faa.gov/files/04_afh_ch2.pdf" target="_blank">AFH Ch 2 (Ground Ops)</a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
