@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Area I: Private &amp; Commercial Preflight Preparation | Lee Aviation</title>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        section {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .content-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .content-card h3 {
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .resource-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        .resource-table th {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 12px;
+            text-align: left;
+            border: 1px solid #2c3e50;
+        }
+
+        .resource-table td {
+            padding: 10px 12px;
+            border: 1px solid #e0e0e0;
+            vertical-align: middle;
+        }
+
+        .resource-table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .link-col {
+            width: 40%;
+            color: #888;
+            font-style: italic;
+        }
+
+        .link-col a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        .link-col a:hover {
+            text-decoration: underline;
+        }
+
+        .section-subhead {
+            font-weight: bold;
+            color: #3498db;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    
+:root{--private:#2576b8;--commercial:#bc7626;--ink:#243b53;--muted:#65758a;}
+body{background:#f4f7f9;}
+nav{padding:18px clamp(18px,4vw,50px);}
+section{padding:32px clamp(12px,4vw,50px);}
+.content-card{padding:clamp(16px,3vw,30px);}
+.intro{color:#526476;margin:8px 0 18px;}
+.legend{display:flex;align-items:center;flex-wrap:wrap;gap:12px 22px;background:#fff;border:1px solid #dfe7ed;border-radius:9px;padding:15px 18px;margin:20px 0 12px;}
+.legend-pair{display:inline-flex;align-items:center;gap:9px;font-size:.92rem;}
+.roundel{width:34px;height:34px;flex:0 0 34px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:white;font-size:.75rem;font-weight:800;font-style:normal;}
+.roundel.private{border:2.5px solid var(--private);color:var(--private)}
+.roundel.commercial{border:2.5px solid var(--commercial);color:var(--commercial)}
+.roundel.both{border:3px solid transparent;background:linear-gradient(white,white) padding-box,conic-gradient(var(--private) 0% 50%,var(--commercial) 50% 100%) border-box;color:#34465c;font-size:.66rem;}
+.scope-cell{width:60px;text-align:center;}
+.resource-table td.scope-cell{padding:8px;text-align:center;}
+.resource-table td.topic-cell{font-weight:500;}
+.resource-table th{white-space:normal;}
+.resource-table td a.source-link{display:inline-block;background:#f0f5f8;border:1px solid #dce6ee;color:#22577a;border-radius:5px;padding:5px 8px;margin:3px 5px 3px 0;font-size:.88em;text-decoration:none;font-weight:600;line-height:1.45;}
+.resource-table td a.source-link:hover,.resource-table td a.source-link:focus-visible{background:#e1edf7;text-decoration:underline;outline-offset:2px;}
+.source-link.reg{background:#edf5fd;border-color:#c9dff1;color:#225d91;}
+.source-link.ac{background:#fbf3e7;border-color:#eddfc9;color:#815117;}
+.source-link.afh{background:#f0f5ed;border-color:#d8e6d1;color:#426439;}
+.source-link.phak{background:#f1eff9;border-color:#ded7f1;color:#5d4c8d;}
+.resource-table tr[data-scope="private"] td.topic-cell{border-left:4px solid var(--private)}
+.resource-table tr[data-scope="commercial"] td.topic-cell{border-left:4px solid var(--commercial)}
+.resource-table tr[data-scope="both"] td.topic-cell{border-left:4px solid #8c91a6}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0 22px;}
+.filters button{border:1px solid #c6d3de;border-radius:20px;background:#fff;color:#263c50;padding:8px 14px;cursor:pointer;font-size:.88rem;font-weight:700;}
+.filters button[aria-pressed="true"]{background:#2c3e50;color:#fff;border-color:#2c3e50;}
+.filters button:focus-visible{outline:3px solid #74add2;outline-offset:2px}
+.small-note{color:#58697a;font-size:.88em;line-height:1.55;}
+.source-head{display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:9px;margin:0 0 12px;}
+.source-head h3{margin:0;flex:1;}
+.acs-pointers{display:flex;flex-wrap:wrap;gap:7px;}
+.acs-pointers a{font-size:.76rem;font-weight:700;border:1px solid #d5e0e6;border-radius:6px;padding:5px 7px;text-decoration:none;color:#3b556e;}
+.acs-pointers a:hover{text-decoration:underline;}
+.resource-table{table-layout:fixed;}
+.resource-table th:first-child{width:64px;}
+.resource-table th:nth-child(2){width:42%;}
+.resource-table th:nth-child(3){width:auto;}
+@media(max-width:710px){.resource-table{table-layout:auto;font-size:.85em;}.resource-table th:first-child{width:48px;}.resource-table th:nth-child(2){width:36%;}.resource-table td{padding:8px 6px;}.resource-table td a.source-link{padding:4px 5px;margin:2px 1px;}.roundel{width:29px;height:29px;flex-basis:29px;font-size:.69rem;}.roundel.both{font-size:.58rem;}}
+@media print{nav,.filters{display:none}.content-card{break-inside:avoid}.resource-table tr{break-inside:avoid}body{background:#fff}}
+
+.resource-table tr[hidden],.content-card[hidden]{display:none!important;}
+</style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav>
+<div class="logo">Lee Aviation</div>
+<ul class="nav-links">
+<li><a href="index.html#home">Home</a></li>
+<li><a href="index.html#services">Services</a></li>
+<li><a href="master-acs.html">Master Hub</a></li>
+</ul>
+</nav>
+<section>
+<h2>Area of Operation I: Preflight Preparation</h2>
+<p class="intro">A shared Private and Commercial Airplane ACS reading guide. Each topic links to the most relevant FAA handbook chapters, advisory circulars, and individual eCFR sections.</p><div aria-label="Certificate color legend" class="legend" role="note"><span class="legend-pair"><span aria-hidden="true" class="roundel private">P</span>Private pilot</span><span class="legend-pair"><span aria-hidden="true" class="roundel commercial">C</span>Commercial pilot</span><span class="legend-pair"><span aria-hidden="true" class="roundel both">P+C</span>Applies to both</span></div><div aria-label="Show material for certificate" class="filters" role="group"><button aria-pressed="true" data-filter="all" type="button">Show everything</button><button aria-pressed="false" data-filter="private" type="button">Private</button><button aria-pressed="false" data-filter="commercial" type="button">Commercial</button></div><p class="small-note">Color denotes which ACS includes the topic; it does not mean every aircraft-specific item applies to every airplane. References are selected study aids, not an official FAA item-by-item crosswalk. Regulatory text controls; advisory circulars provide guidance. Check the current ACS, handbook addenda, aircraft POH/AFM, and live regulations before operational use.</p>
+<!-- TASK A -->
+<div class="content-card">
+<div class="source-head"><h3>Task A: Pilot Qualifications</h3><div class="acs-pointers"><a href="https://www.faa.gov/training_testing/testing/acs/private_airplane_acs_6.pdf#page=10" rel="noopener noreferrer" target="_blank">P ACS · Task A</a><a href="https://www.faa.gov/training_testing/testing/acs/commercial_airplane_acs_7.pdf#page=9" rel="noopener noreferrer" target="_blank">C ACS · Task A</a></div></div>
+<table class="resource-table">
+<thead>
+<tr><th scope="col">ACS</th>
+<th>Knowledge Item</th>
+<th>Resources &amp; Links</th>
+</tr>
+</thead>
+<tbody>
+<tr data-scope="both" data-task="A"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Certification requirements, recent flight experience, and recordkeeping.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.103" rel="noopener noreferrer" target="_blank">14 CFR § 61.103</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.123" rel="noopener noreferrer" target="_blank">14 CFR § 61.123</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.56" rel="noopener noreferrer" target="_blank">14 CFR § 61.56</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.57" rel="noopener noreferrer" target="_blank">14 CFR § 61.57</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.51" rel="noopener noreferrer" target="_blank">14 CFR § 61.51</a><a class="source-link ac" href="https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1043281" rel="noopener noreferrer" target="_blank">AC 61-98E · Currency and flight reviews</a></td>
+</tr>
+<tr data-scope="private" data-task="A"><td class="scope-cell"><span aria-label="Private pilot only" class="roundel private">P</span></td>
+<td class="topic-cell">• Private pilot privileges and limitations.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.113" rel="noopener noreferrer" target="_blank">14 CFR § 61.113</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/03_phak_ch1.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 1 · pilot certification</a></td>
+</tr><tr data-scope="commercial" data-task="A"><td class="scope-cell"><span aria-label="Commercial pilot only" class="roundel commercial">C</span></td><td class="topic-cell">• Commercial pilot privileges and limitations.</td><td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.133" rel="noopener noreferrer" target="_blank">14 CFR § 61.133</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-119/section-119.1" rel="noopener noreferrer" target="_blank">14 CFR § 119.1</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/03_phak_ch1.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 1 · pilot certification</a></td></tr>
+<tr data-scope="both" data-task="A"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Medical certificates: class, expiration, privileges, temporary disqualifications.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.23" rel="noopener noreferrer" target="_blank">14 CFR § 61.23</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.53" rel="noopener noreferrer" target="_blank">14 CFR § 61.53</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-67" rel="noopener noreferrer" target="_blank">14 CFR Part 67 · medical standards</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 17 · aeromedical factors</a></td>
+</tr>
+<tr data-scope="private" data-task="A"><td class="scope-cell"><span aria-label="Private pilot only" class="roundel private">P</span></td><td class="topic-cell">• Documents required to exercise private pilot privileges.</td><td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.3" rel="noopener noreferrer" target="_blank">14 CFR § 61.3</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.23" rel="noopener noreferrer" target="_blank">14 CFR § 61.23</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.113" rel="noopener noreferrer" target="_blank">14 CFR § 61.113</a></td></tr><tr data-scope="commercial" data-task="A"><td class="scope-cell"><span aria-label="Commercial pilot only" class="roundel commercial">C</span></td>
+<td class="topic-cell">• Documents required to exercise commercial pilot privileges.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.3" rel="noopener noreferrer" target="_blank">14 CFR § 61.3</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.133" rel="noopener noreferrer" target="_blank">14 CFR § 61.133</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.23" rel="noopener noreferrer" target="_blank">14 CFR § 61.23</a></td>
+</tr>
+<tr data-scope="both" data-task="A"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Part 68 BasicMed privileges and limitations.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-68" rel="noopener noreferrer" target="_blank">14 CFR Part 68 · BasicMed</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.113" rel="noopener noreferrer" target="_blank">14 CFR § 61.113</a><a class="source-link ac" href="https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentid/1031168" rel="noopener noreferrer" target="_blank">AC 68-1A · BasicMed (read with current Part 68)</a></td>
+</tr>
+</tbody>
+</table>
+<div class="section-subhead">Risk Management &amp; Skills Summary</div>
+<p style="font-size: 0.9em; color: #555;"><strong>Risks:</strong> Proficiency vs. currency; flying unfamiliar aircraft or avionics.<br/><strong>Skills:</strong> Apply requirements to act as PIC under VFR in a given scenario.</p>
+</div>
+<!-- TASK B -->
+<div class="content-card">
+<div class="source-head"><h3>Task B: Airworthiness Requirements</h3><div class="acs-pointers"><a href="https://www.faa.gov/training_testing/testing/acs/private_airplane_acs_6.pdf#page=10" rel="noopener noreferrer" target="_blank">P ACS · Task B</a><a href="https://www.faa.gov/training_testing/testing/acs/commercial_airplane_acs_7.pdf#page=9" rel="noopener noreferrer" target="_blank">C ACS · Task B</a></div></div>
+<table class="resource-table">
+<thead>
+<tr><th scope="col">ACS</th>
+<th>Knowledge Item</th>
+<th>Resources &amp; Links</th>
+</tr>
+</thead>
+<tbody>
+<tr data-scope="both" data-task="B"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Location and expiration dates of required aircraft certificates.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.203" rel="noopener noreferrer" target="_blank">14 CFR § 91.203</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.9" rel="noopener noreferrer" target="_blank">14 CFR § 91.9</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/11_phak_ch9.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 9 · flight manuals and documents</a><a class="source-link afh" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/03_afh_ch2.pdf" rel="noopener noreferrer" target="_blank">AFH Ch 2 · preflight airworthiness</a></td>
+</tr>
+<tr data-scope="both" data-task="B"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Required inspections and airplane logbook documentation.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.409" rel="noopener noreferrer" target="_blank">14 CFR § 91.409</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.417" rel="noopener noreferrer" target="_blank">14 CFR § 91.417</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.411" rel="noopener noreferrer" target="_blank">14 CFR § 91.411</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.413" rel="noopener noreferrer" target="_blank">14 CFR § 91.413</a><a class="source-link afh" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/03_afh_ch2.pdf" rel="noopener noreferrer" target="_blank">AFH Ch 2 · preflight airworthiness</a></td>
+</tr>
+<tr data-scope="both" data-task="B"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Airworthiness Directives (ADs) and Special Airworthiness Information Bulletins (SAIBs).</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-39" rel="noopener noreferrer" target="_blank">14 CFR Part 39 · airworthiness directives</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.403" rel="noopener noreferrer" target="_blank">14 CFR § 91.403</a><a class="source-link faa" href="https://drs.faa.gov/" rel="noopener noreferrer" target="_blank">FAA DRS · ADs and SAIBs</a></td>
+</tr>
+<tr data-scope="both" data-task="B"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Purpose and procedure for obtaining a special flight permit.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-21/section-21.197" rel="noopener noreferrer" target="_blank">14 CFR § 21.197</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-21/section-21.199" rel="noopener noreferrer" target="_blank">14 CFR § 21.199</a><a class="source-link faa" href="https://www.faa.gov/aircraft/air_cert/aw_cert/special_aw_certificates" rel="noopener noreferrer" target="_blank">FAA · special flight permits</a></td>
+</tr><tr data-scope="both" data-task="B"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td><td class="topic-cell">• Owner/operator and pilot-in-command airworthiness responsibilities.</td><td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.7" rel="noopener noreferrer" target="_blank">14 CFR § 91.7</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.403" rel="noopener noreferrer" target="_blank">14 CFR § 91.403</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.405" rel="noopener noreferrer" target="_blank">14 CFR § 91.405</a><a class="source-link afh" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/03_afh_ch2.pdf" rel="noopener noreferrer" target="_blank">AFH Ch 2 · PIC airworthiness assessment</a></td></tr>
+<tr data-scope="both" data-task="B"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Pilot-performed preventive maintenance.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-43/section-43.3" rel="noopener noreferrer" target="_blank">14 CFR § 43.3</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-43/section-43.7" rel="noopener noreferrer" target="_blank">14 CFR § 43.7</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-43/section-43.9" rel="noopener noreferrer" target="_blank">14 CFR § 43.9</a><a class="source-link ac" href="https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1028826" rel="noopener noreferrer" target="_blank">AC 43-12A · Preventive maintenance</a></td>
+</tr>
+<tr data-scope="both" data-task="B"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Equipment requirements for day and night VFR flight, including inoperative equipment, MELs, KOELs, and placards.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.205" rel="noopener noreferrer" target="_blank">14 CFR § 91.205</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.213" rel="noopener noreferrer" target="_blank">14 CFR § 91.213</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.207" rel="noopener noreferrer" target="_blank">14 CFR § 91.207</a><a class="source-link ac" href="https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1042212" rel="noopener noreferrer" target="_blank">AC 91-67A · Inoperative equipment</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/11_phak_ch9.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 9 · limitations and KOEL</a></td>
+</tr>
+<tr data-scope="both" data-task="B"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Special airworthiness certificate aircraft operating limitations, if applicable.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.9" rel="noopener noreferrer" target="_blank">14 CFR § 91.9</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.319" rel="noopener noreferrer" target="_blank">14 CFR § 91.319</a><a class="source-link faa" href="https://www.faa.gov/aircraft/air_cert/aw_cert/special_aw_certificates" rel="noopener noreferrer" target="_blank">FAA · special airworthiness certificates</a></td>
+</tr>
+</tbody>
+</table>
+<div class="section-subhead">Risk Management &amp; Skills Summary</div>
+<p style="font-size: 0.9em; color: #555;"><strong>Risks:</strong> Inoperative equipment discovered prior to flight.<br/><strong>Skills:</strong> Determine airworthiness and apply procedures for inoperative equipment.</p>
+</div>
+<!-- TASK C -->
+<div class="content-card">
+<div class="source-head"><h3>Task C: Weather Information</h3><div class="acs-pointers"><a href="https://www.faa.gov/training_testing/testing/acs/private_airplane_acs_6.pdf#page=11" rel="noopener noreferrer" target="_blank">P ACS · Task C</a><a href="https://www.faa.gov/training_testing/testing/acs/commercial_airplane_acs_7.pdf#page=10" rel="noopener noreferrer" target="_blank">C ACS · Task C</a></div></div>
+<table class="resource-table">
+<thead>
+<tr><th scope="col">ACS</th>
+<th>Knowledge Item</th>
+<th>Resources &amp; Links</th>
+</tr>
+</thead>
+<tbody>
+<tr data-scope="both" data-task="C"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Sources of weather data (National Weather Service, Flight Service).</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/15_phak_ch13.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 13 · weather services</a><a class="source-link phak" href="https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook" rel="noopener noreferrer" target="_blank">Aviation Weather Handbook · 2026 (FAA-H-8083-28B)</a><a class="source-link faa" href="https://aviationweather.gov/" rel="noopener noreferrer" target="_blank">Aviation Weather Center</a><a class="source-link ac" href="https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1036892" rel="noopener noreferrer" target="_blank">AC 91-92 · Preflight briefing</a></td>
+</tr>
+<tr data-scope="both" data-task="C"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Airport Observations (METAR and SPECI) and Pilot Observations (PIREPs).</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/15_phak_ch13.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 13 · weather observations</a><a class="source-link phak" href="https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook" rel="noopener noreferrer" target="_blank">Aviation Weather Handbook · 2026 (FAA-H-8083-28B)</a><a class="source-link faa" href="https://aviationweather.gov/" rel="noopener noreferrer" target="_blank">Aviation Weather Center</a></td>
+</tr>
+<tr data-scope="both" data-task="C"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Surface Analysis Chart, Ceiling and Visibility Chart (CVA).</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook" rel="noopener noreferrer" target="_blank">Aviation Weather Handbook · 2026 (FAA-H-8083-28B)</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/15_phak_ch13.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 13 · weather graphics</a><a class="source-link faa" href="https://aviationweather.gov/" rel="noopener noreferrer" target="_blank">Aviation Weather Center</a></td>
+</tr>
+<tr data-scope="both" data-task="C"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Terminal Aerodrome Forecasts (TAF).</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook" rel="noopener noreferrer" target="_blank">Aviation Weather Handbook · 2026 (FAA-H-8083-28B)</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/15_phak_ch13.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 13 · forecasts</a><a class="source-link faa" href="https://aviationweather.gov/" rel="noopener noreferrer" target="_blank">Aviation Weather Center</a></td>
+</tr>
+<tr data-scope="both" data-task="C"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Graphical Forecasts for Aviation (GFA).</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook" rel="noopener noreferrer" target="_blank">Aviation Weather Handbook · 2026 (FAA-H-8083-28B)</a><a class="source-link faa" href="https://aviationweather.gov/" rel="noopener noreferrer" target="_blank">Aviation Weather Center</a><a class="source-link ac" href="https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1036892" rel="noopener noreferrer" target="_blank">AC 91-92 · Preflight briefing</a></td>
+</tr>
+<tr data-scope="both" data-task="C"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Wind and Temperature Aloft Forecast (FB).</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook" rel="noopener noreferrer" target="_blank">Aviation Weather Handbook · 2026 (FAA-H-8083-28B)</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/15_phak_ch13.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 13 · winds and temperatures aloft</a><a class="source-link faa" href="https://aviationweather.gov/" rel="noopener noreferrer" target="_blank">Aviation Weather Center</a></td>
+</tr>
+<tr data-scope="both" data-task="C"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Convective Outlook (AC).</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook" rel="noopener noreferrer" target="_blank">Aviation Weather Handbook · 2026 (FAA-H-8083-28B)</a><a class="source-link faa" href="https://aviationweather.gov/" rel="noopener noreferrer" target="_blank">Aviation Weather Center</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/14_phak_ch12.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 12 · convection</a></td>
+</tr>
+<tr data-scope="both" data-task="C"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Inflight Aviation Weather Advisories (AIRMETs, SIGMETs, Convective SIGMETs).</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook" rel="noopener noreferrer" target="_blank">Aviation Weather Handbook · 2026 (FAA-H-8083-28B)</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/15_phak_ch13.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 13 · advisories</a><a class="source-link faa" href="https://aviationweather.gov/" rel="noopener noreferrer" target="_blank">Aviation Weather Center</a></td>
+</tr>
+<tr data-scope="both" data-task="C"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Meteorology: atmospheric composition/stability, windshear, temperature exchange, moisture, fronts, clouds, turbulence, thunderstorms, icing, fog, frost, and visibility obstructions.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/14_phak_ch12.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 12 · weather theory</a><a class="source-link phak" href="https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook" rel="noopener noreferrer" target="_blank">Aviation Weather Handbook · 2026 (FAA-H-8083-28B)</a></td>
+</tr>
+<tr data-scope="both" data-task="C"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Flight deck instrument displays of digital weather and aeronautical information.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/15_phak_ch13.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 13 · data limitations</a><a class="source-link phak" href="https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook" rel="noopener noreferrer" target="_blank">Aviation Weather Handbook · 2026 (FAA-H-8083-28B)</a><a class="source-link ac" href="https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1042512" rel="noopener noreferrer" target="_blank">AC 91-78A · Electronic flight bags</a></td>
+</tr>
+</tbody>
+</table>
+<div class="section-subhead">Risk Management &amp; Skills Summary</div>
+<p style="font-size: 0.9em; color: #555;"><strong>Risks:</strong> Go/no-go decisions, diversion circumstances, personal minimums, forecast turbulence/icing.<br/><strong>Skills:</strong> Obtain briefings, analyze conditions, and correlate weather for go/no-go decisions.</p>
+</div>
+<!-- TASK D -->
+<div class="content-card">
+<div class="source-head"><h3>Task D: Cross-Country Flight Planning</h3><div class="acs-pointers"><a href="https://www.faa.gov/training_testing/testing/acs/private_airplane_acs_6.pdf#page=12" rel="noopener noreferrer" target="_blank">P ACS · Task D</a><a href="https://www.faa.gov/training_testing/testing/acs/commercial_airplane_acs_7.pdf#page=11" rel="noopener noreferrer" target="_blank">C ACS · Task D</a></div></div>
+<table class="resource-table">
+<thead>
+<tr><th scope="col">ACS</th>
+<th>Knowledge Item</th>
+<th>Resources &amp; Links</th>
+</tr>
+</thead>
+<tbody>
+<tr data-scope="both" data-task="D"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Route planning, classes/special use airspace (SUA), and navigation/communication system selection (including EFB).</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.103" rel="noopener noreferrer" target="_blank">14 CFR § 91.103</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/17_phak_ch15.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 15 · airspace</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 16 · navigation</a><a class="source-link faa" href="https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/" rel="noopener noreferrer" target="_blank">Chart Users’ Guide (current)</a><a class="source-link ac" href="https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1042512" rel="noopener noreferrer" target="_blank">AC 91-78A · Electronic flight bags</a></td>
+</tr>
+<tr data-scope="both" data-task="D"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Altitude selection accounting for terrain, obstacles, glide distance, VFR cruising altitudes, and wind.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.119" rel="noopener noreferrer" target="_blank">14 CFR § 91.119</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.159" rel="noopener noreferrer" target="_blank">14 CFR § 91.159</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 11 · performance</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 16 · navigation</a></td>
+</tr>
+<tr data-scope="both" data-task="D"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Calculations: time, climb/descent rates, course, distance, heading, true airspeed, groundspeed, ETA/UTC, and fuel requirements/reserves.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 16 · planning and calculations</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 11 · performance</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.151" rel="noopener noreferrer" target="_blank">14 CFR § 91.151</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.103" rel="noopener noreferrer" target="_blank">14 CFR § 91.103</a></td>
+</tr>
+<tr data-scope="both" data-task="D"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Elements of a VFR flight plan, filing, activating, closing, and inflight intercept procedures.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 16 · VFR flight planning</a><a class="source-link faa" href="https://www.faa.gov/air_traffic/publications/atpubs/aim_html/" rel="noopener noreferrer" target="_blank">FAA AIM (current)</a><a class="source-link ac" href="https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1036892" rel="noopener noreferrer" target="_blank">AC 91-92 · Preflight briefing</a><a class="source-link faa" href="https://www.1800wxbrief.com/" rel="noopener noreferrer" target="_blank">1800WXBRIEF · Flight Service</a></td>
+</tr>
+</tbody>
+</table>
+<div class="section-subhead">Risk Management &amp; Skills Summary</div>
+<p style="font-size: 0.9em; color: #555;"><strong>Risks:</strong> Pilot, aircraft, environment, external pressures, ATC service limits, fuel planning.<br/><strong>Skills:</strong> Prepare cross-country plan, navigation log, re-calculate fuel reserves, use EFB.</p>
+</div>
+<!-- TASK E -->
+<div class="content-card">
+<div class="source-head"><h3>Task E: National Airspace System</h3><div class="acs-pointers"><a href="https://www.faa.gov/training_testing/testing/acs/private_airplane_acs_6.pdf#page=13" rel="noopener noreferrer" target="_blank">P ACS · Task E</a><a href="https://www.faa.gov/training_testing/testing/acs/commercial_airplane_acs_7.pdf#page=12" rel="noopener noreferrer" target="_blank">C ACS · Task E</a></div></div>
+<table class="resource-table">
+<thead>
+<tr><th scope="col">ACS</th>
+<th>Knowledge Item</th>
+<th>Resources &amp; Links</th>
+</tr>
+</thead>
+<tbody>
+<tr data-scope="both" data-task="E"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Airspace classes and associated requirements and limitations.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/17_phak_ch15.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 15 · airspace classes</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-71" rel="noopener noreferrer" target="_blank">14 CFR Part 71 · designated airspace</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.126" rel="noopener noreferrer" target="_blank">14 CFR § 91.126</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.130" rel="noopener noreferrer" target="_blank">14 CFR § 91.130</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.131" rel="noopener noreferrer" target="_blank">14 CFR § 91.131</a></td>
+</tr>
+<tr data-scope="both" data-task="E"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Chart symbols and visual flight rules minimums.</td>
+<td class="link-col"><a class="source-link faa" href="https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/" rel="noopener noreferrer" target="_blank">Chart Users’ Guide (current)</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/17_phak_ch15.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 15 · weather minimums</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.155" rel="noopener noreferrer" target="_blank">14 CFR § 91.155</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.157" rel="noopener noreferrer" target="_blank">14 CFR § 91.157</a></td>
+</tr>
+<tr data-scope="both" data-task="E"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Special use airspace (SUA), SFRA, TFRs, and special VFR requirements.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/17_phak_ch15.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 15 · special use airspace</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.137" rel="noopener noreferrer" target="_blank">14 CFR § 91.137</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.141" rel="noopener noreferrer" target="_blank">14 CFR § 91.141</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.157" rel="noopener noreferrer" target="_blank">14 CFR § 91.157</a><a class="source-link faa" href="https://www.faa.gov/air_traffic/publications/atpubs/aim_html/" rel="noopener noreferrer" target="_blank">FAA AIM (current)</a></td>
+</tr>
+</tbody>
+</table>
+<div class="section-subhead">Risk Management &amp; Skills Summary</div>
+<p style="font-size: 0.9em; color: #555;"><strong>Risks:</strong> Operating across various classes and types of airspace.<br/><strong>Skills:</strong> Comply with VFR weather minimums, communication requirements, and SATR/SFRA rules.</p>
+</div>
+<!-- TASK F -->
+<div class="content-card">
+<div class="source-head"><h3>Task F: Performance and Limitations</h3><div class="acs-pointers"><a href="https://www.faa.gov/training_testing/testing/acs/private_airplane_acs_6.pdf#page=14" rel="noopener noreferrer" target="_blank">P ACS · Task F</a><a href="https://www.faa.gov/training_testing/testing/acs/commercial_airplane_acs_7.pdf#page=13" rel="noopener noreferrer" target="_blank">C ACS · Task F</a></div></div>
+<table class="resource-table">
+<thead>
+<tr><th scope="col">ACS</th>
+<th>Knowledge Item</th>
+<th>Resources &amp; Links</th>
+</tr>
+</thead>
+<tbody>
+<tr data-scope="both" data-task="F"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Elements related to performance and limitations using charts, tables, and data.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 11 · performance charts</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/12_phak_ch10.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 10 · weight and balance</a><a class="source-link afh" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/03_afh_ch2.pdf" rel="noopener noreferrer" target="_blank">AFH Ch 2 · preflight preparation</a></td>
+</tr>
+<tr data-scope="both" data-task="F"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Factors affecting performance: atmospheric conditions, pilot technique, configuration, airport environment, and loading/CG.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 11 · density altitude and performance</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/12_phak_ch10.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 10 · weight and balance</a><a class="source-link afh" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/05_afh_ch4.pdf" rel="noopener noreferrer" target="_blank">AFH Ch 4 · energy management</a></td>
+</tr>
+<tr data-scope="both" data-task="F"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Aerodynamics underlying aircraft performance.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/06_phak_ch4.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 4 · principles of flight</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/07_phak_ch5.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 5 · aerodynamics</a><a class="source-link afh" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/05_afh_ch4.pdf" rel="noopener noreferrer" target="_blank">AFH Ch 4 · energy management</a></td>
+</tr>
+</tbody>
+</table>
+<div class="section-subhead">Risk Management &amp; Skills Summary</div>
+<p style="font-size: 0.9em; color: #555;"><strong>Risks:</strong> Use of performance charts, aircraft limitations, and calculated vs. actual performance.<br/><strong>Skills:</strong> Compute weight and balance, correct CG errors, and use performance charts.</p>
+</div>
+<!-- TASK G -->
+<div class="content-card">
+<div class="source-head"><h3>Task G: Operation of Systems</h3><div class="acs-pointers"><a href="https://www.faa.gov/training_testing/testing/acs/private_airplane_acs_6.pdf#page=15" rel="noopener noreferrer" target="_blank">P ACS · Task G</a><a href="https://www.faa.gov/training_testing/testing/acs/commercial_airplane_acs_7.pdf#page=14" rel="noopener noreferrer" target="_blank">C ACS · Task G</a></div></div>
+<table class="resource-table">
+<thead>
+<tr><th scope="col">ACS</th>
+<th>Knowledge Item</th>
+<th>Resources &amp; Links</th>
+</tr>
+</thead>
+<tbody>
+<tr data-scope="both" data-task="G"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Primary and secondary flight controls.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/08_phak_ch6.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 6 · flight controls</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 7 · aircraft systems</a><a class="source-link afh" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/04_afh_ch3.pdf" rel="noopener noreferrer" target="_blank">AFH Ch 3 · basic airplane control</a></td>
+</tr>
+<tr data-scope="both" data-task="G"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Powerplant, propeller, and landing gear systems.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 7 · engine, propeller, and gear</a><a class="source-link afh" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/13_afh_ch12.pdf" rel="noopener noreferrer" target="_blank">AFH Ch 12 · complex airplane transition (if applicable)</a></td>
+</tr>
+<tr data-scope="both" data-task="G"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Fuel, oil, hydraulic, electrical, and avionics systems.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 7 · aircraft systems</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 8 · flight instruments</a><a class="source-link afh" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/03_afh_ch2.pdf" rel="noopener noreferrer" target="_blank">AFH Ch 2 · preflight inspection</a></td>
+</tr>
+<tr data-scope="both" data-task="G"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Pitot-static, vacuum/pressure instruments, and environmental systems.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 8 · flight instruments</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 7 · aircraft systems</a></td>
+</tr>
+<tr data-scope="both" data-task="G"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Deicing/anti-icing, water rudders (ASES/AMES), and oxygen systems.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 7 · aircraft systems</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 17 · oxygen physiology</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.211" rel="noopener noreferrer" target="_blank">14 CFR § 91.211</a></td>
+</tr>
+<tr data-scope="both" data-task="G"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Indications of and procedures for managing system abnormalities or failures.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 7 · system malfunctions</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 8 · instrument failures</a><a class="source-link afh" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/19_afh_ch18.pdf" rel="noopener noreferrer" target="_blank">AFH Ch 18 · emergency procedures</a></td>
+</tr>
+</tbody>
+</table>
+<div class="section-subhead">Risk Management &amp; Skills Summary</div>
+<p style="font-size: 0.9em; color: #555;"><strong>Risks:</strong> Detection, management of failures, and automated system monitoring.<br/><strong>Skills:</strong> Operate at least three specified systems appropriately and complete checklists.</p>
+</div>
+<!-- TASK H -->
+<div class="content-card">
+<div class="source-head"><h3>Task H: Human Factors</h3><div class="acs-pointers"><a href="https://www.faa.gov/training_testing/testing/acs/private_airplane_acs_6.pdf#page=16" rel="noopener noreferrer" target="_blank">P ACS · Task H</a><a href="https://www.faa.gov/training_testing/testing/acs/commercial_airplane_acs_7.pdf#page=15" rel="noopener noreferrer" target="_blank">C ACS · Task H</a></div></div>
+<table class="resource-table">
+<thead>
+<tr><th scope="col">ACS</th>
+<th>Knowledge Item</th>
+<th>Resources &amp; Links</th>
+</tr>
+</thead>
+<tbody>
+<tr data-scope="both" data-task="H"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Aeromedical issues: hypoxia, hyperventilation, ear/sinus blocks, spatial disorientation, motion sickness, and carbon monoxide poisoning.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 17 · aeromedical factors</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.211" rel="noopener noreferrer" target="_blank">14 CFR § 91.211</a><a class="source-link afh" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/12_afh_ch11.pdf" rel="noopener noreferrer" target="_blank">AFH Ch 11 · night flight and vision</a></td>
+</tr>
+<tr data-scope="both" data-task="H"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Stress, fatigue, dehydration, nutrition, hypothermia, optical illusions, and scuba diving nitrogen.</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 17 · fatigue and other human factors</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/04_phak_ch2.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 2 · ADM and risk management</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.53" rel="noopener noreferrer" target="_blank">14 CFR § 61.53</a></td>
+</tr>
+<tr data-scope="both" data-task="H"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Regulations regarding alcohol and drug use, and their physiological effects.</td>
+<td class="link-col"><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-91/section-91.17" rel="noopener noreferrer" target="_blank">14 CFR § 91.17</a><a class="source-link reg" href="https://www.ecfr.gov/current/title-14/part-61/section-61.53" rel="noopener noreferrer" target="_blank">14 CFR § 61.53</a><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 17 · drugs and alcohol</a></td>
+</tr>
+<tr data-scope="both" data-task="H"><td class="scope-cell"><span aria-label="Private and Commercial pilots" class="roundel both">P+C</span></td>
+<td class="topic-cell">• Aeronautical Decision-Making (ADM), CRM, and Single-Pilot Resource Management (SRM).</td>
+<td class="link-col"><a class="source-link phak" href="https://www.faa.gov/sites/faa.gov/files/04_phak_ch2.pdf" rel="noopener noreferrer" target="_blank">PHAK Ch 2 · ADM</a><a class="source-link afh" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/03_afh_ch2.pdf" rel="noopener noreferrer" target="_blank">AFH Ch 2 · risk and resource management</a><a class="source-link ac" href="https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1036892" rel="noopener noreferrer" target="_blank">AC 91-92 · Preflight briefing</a></td>
+</tr>
+</tbody>
+</table>
+<div class="section-subhead">Risk Management &amp; Skills Summary</div>
+<p style="font-size: 0.9em; color: #555;"><strong>Risks:</strong> Physiological issues, hazardous attitudes, distractions, confirmation/expectation bias.<br/><strong>Skills:</strong> Associate symptoms/corrective actions for conditions and perform self-assessment.</p>
+</div>
+</section>
+<footer>
+<p>© 2026 Lee Aviation. See you in the skies.</p>
+</footer>
+<script>
+(function(){
+  const buttons=[...document.querySelectorAll('.filters [data-filter]')];
+  const rows=[...document.querySelectorAll('.resource-table tbody tr[data-scope]')];
+  const cards=[...document.querySelectorAll('.content-card')];
+  function applyFilter(filter){
+    buttons.forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.filter===filter)));
+    rows.forEach(row=>{row.hidden=!(filter==='all'||row.dataset.scope==='both'||row.dataset.scope===filter);});
+    cards.forEach(card=>{card.hidden=!card.querySelector('tbody tr:not([hidden])');});
+  }
+  buttons.forEach(btn=>btn.addEventListener('click',()=>applyFilter(btn.dataset.filter)));
+  applyFilter('all');
+})();
+</script></body>
+</html>
